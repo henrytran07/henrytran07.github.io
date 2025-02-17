@@ -3,16 +3,13 @@ import * as React from "react"
 
 const backgroundData = {
   title: "Background",
-  part1: "Currently, I serve as the Consulting Head of Engineering at ",
-  part2: "Talking Yak",
-  part2Href: "https://talkingyak.com/",
-  part3: " where I lead a team in developing innovative tech solutions.",
-  line2: "As a hands-on full-stack software engineer, I adeptly bridge the gap between backend and frontend teams, crafting robust architectures in the process. I consistently stay abreast of the latest developments in my field, diligently seeking opportunities to learn and explore emerging technologies.",
-  line3Part1: "When I'm not in front of a computer screen",
-  line3Part2: ", you'll likely find me engaging in a game of badminton, exploring new cuisines, or delving into spontaneous DIY projects—all of which I enjoy sharing on my ",
-  line3Part3: "YouTube channel",
-  line3Part3Href: "https://www.youtube.com/@kavindiy",
-  line3Part4: ".",
+  part1: "I am currently an electrical undegraduate student at ",
+  part2: "Mount San Antonio College",
+  part2Href: "https://www.mtsac.edu/",
+  part3: " where I am pursuing lower-division courses. Next year, I plan to transfer to a four-year university to further my studies as a Computer Science & Electrical Engineering student.",
+  line2: "As a back-end developer, I diligently focus on the system's core mechanisms and work to extend its functionality, ensuring efficiency and scalability. Additionally, I am also concentrating on the field of machine learning to become more versatile and better equipped to handle a broader range of tasks at work.",
+  line3Part1: "Beyond coding and innovation in engineering,",
+  line3Part2: ", my hideout is often at 24 Hour Fitness, where I relieve stress and work toward becoming a stronger, healthier version of myself.",
 };
 const Background = () => (
   <section className="section background">
