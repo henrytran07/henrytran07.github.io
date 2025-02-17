@@ -1,5 +1,3 @@
-import * as React from "react"
-import Parser from 'html-react-parser';
 import "./other-projects.scss"
 
 const otherProjectsData = [
