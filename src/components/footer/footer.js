@@ -4,23 +4,15 @@ import "./footer.scss"
 const socialData = [
   {
     "title": "email",
-    "url": "mailto:kavin@varnan.me"
-  },
-  {
-    "title": "twitter",
-    "url": "https://twitter.com/skvarnan"
-  },
-  {
-    "title": "stackoverflow",
-    "url": "https://stackoverflow.com/users/1452884/kavin-varnan"
+    "url": "mailto:henrytran0715@gmail.com"
   },
   {
     "title": "github",
-    "url": "https://github.com/skavinvarnan"
+    "url": "https://github.com/henrytran07"
   },
   {
     "title": "linkedin",
-    "url": "https://www.linkedin.com/in/kavin-varnan-08083229/"
+    "url": "https://www.linkedin.com/in/henry-tran-8b6025314/"
   },
 ]
 const Footer = () => (
@@ -37,7 +29,7 @@ const Footer = () => (
       <div className="bottom credits">
         <small>
           Theme by
-          <a href="https://github.com/bchiang7/bchiang7.github.io" rel="noreferrer" target="_blank"> Brittany Chiang</a>
+          <a href="https://github.com/henrytran07/henrytran07.github.io" rel="noreferrer" target="_blank"> Brittany Chiang</a>
         </small>
       </div>
     </div>
