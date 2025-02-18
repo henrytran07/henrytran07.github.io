@@ -25,29 +25,4 @@ const otherProjectsData = [
   },
 ]
 
-const FeaturedProjects = () => (
-  <section className="section other-projects">
-    <div className="section__title">Other Projects</div>
-    <div className="section__content">
-      {
-        otherProjectsData.map((project) => (
-          <div className="project">
-            <div className="project__name">
-              <a href={project.url} target="_blank" rel="noreferrer" className="arrow-link">{project.name}</a>
-            </div>
-            <p>{Parser(project.description)}</p>
-            <div className="project__used">
-              {
-                project.used.map((item) => (
-                  <span className="project__used__item">{item.thing}</span>
-                ))
-              }
-            </div>
-          </div>
-        ))
-      }
-    </div>
-  </section>
-)
-
 export default FeaturedProjects
