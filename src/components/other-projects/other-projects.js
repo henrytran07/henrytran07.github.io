@@ -25,7 +25,7 @@ const otherProjectsData = [
   },
 ]
 
-const FeaturedProjects = () => (
+const OtherProjects = () => (
   <section className="section other-projects">
     <div className="section__title">Other Projects</div>
     <div className="section__content">
@@ -50,4 +50,4 @@ const FeaturedProjects = () => (
   </section>
 )
 
-export default FeaturedProjects
+export default OtherProjects
