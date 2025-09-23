@@ -12,7 +12,7 @@ const experienceData = [
     "institution": "Algoverse",
     "time": "May 2025 - now",
     "position": "Machine Learning Researcher",
-    "url": "https://www.algoverse.com" 
+    "url": "https://algoverseairesearch.org/" 
   }, 
   {
     "institution": "Mount San Antonio College",
