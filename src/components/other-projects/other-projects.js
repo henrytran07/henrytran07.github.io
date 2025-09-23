@@ -26,7 +26,7 @@ const otherProjectsData = [
 ]
 
 const OtherProjects = () => (
-  <section className="section other-projects">
+  <section className="section projects">
     <div className="section__title">Other Projects</div>
     <div className="section__content">
       {
