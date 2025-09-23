@@ -37,7 +37,7 @@ const Skills = () => (
 
         {/* Data Science Section */}
         <div className="skillz__category">
-          <div className="skillz__category__label">{skillsData.dataScienceTitle}</div>
+          <div className="skillz__category__label">{skillsData.dsTitle}</div>
           <ul>
             {skillsData.dataScienceSkills.map((skill, index) => (
               <li key={index} className="skillz__category__item">{skill}</li>
