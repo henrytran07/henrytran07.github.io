@@ -4,6 +4,8 @@ import "./skills.scss"
 const skillsData = {
   "frameworksTitle": "Backend",
   "frameworks": ["Python", "C++"],
+  "frameworksTiltle": "Machine Learning",
+  "frameworks" : ["LLM", "Supervised Learning"],
 }
 
 const Skills = () => (
