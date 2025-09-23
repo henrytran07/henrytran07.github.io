@@ -13,7 +13,13 @@ const experienceData = [
     "time": "May 2025 - now",
     "position": "Machine Learning Researcher",
     "url": "https://www.algoverse.com" 
-  }
+  }, 
+  {
+    "institution": "Mount San Antonio College",
+    "time": "August 2025 - now", 
+    "position": "Programmer, Mt. SAC Robotics Team", 
+    "url": "https://www.mtsac.edu/engineering/robotics.html"
+  },
 ];
 
 const Experience = () => (

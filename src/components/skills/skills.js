@@ -8,6 +8,8 @@ const skillsData = {
   "mlframeworks": ["LLM", "Supervised Learning"],
   "dsTitle": "Data Science", 
   "dataScienceSkills": ["Pandas", "Matplotlib (plt)", "NumPy"],
+  "roboticTitle": "VEX Programming", 
+  "roboticSkills": ["VEX Robotics", "Autonomous Driving", "Arcade Driving", "Tank Driving"]
 };
 
 const Skills = () => (
@@ -40,6 +42,16 @@ const Skills = () => (
           <div className="skillz__category__label">{skillsData.dsTitle}</div>
           <ul>
             {skillsData.dataScienceSkills.map((skill, index) => (
+              <li key={index} className="skillz__category__item">{skill}</li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Robotics Section */}
+        <div className="skillz__category">
+          <div className="skillz__category__label">{skillsData.roboticTitle}</div>
+          <ul>
+            {skillsData.roboticSkills.map((skill, index) => (
               <li key={index} className="skillz__category__item">{skill}</li>
             ))}
           </ul>
