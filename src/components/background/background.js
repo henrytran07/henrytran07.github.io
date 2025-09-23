@@ -3,13 +3,11 @@ import * as React from "react"
 
 const backgroundData = {
   title: "Background",
-  part1: "I am currently an electrical undegraduate student at ",
+  part1: "I am currently an electrical engineering & computer science (EECS) student at ",
   part2: "Mount San Antonio College",
   part2Href: "https://www.mtsac.edu/",
-  part3: " where I am pursuing lower-division courses. Next year, I plan to transfer to a four-year university to further my studies as a Computer Science & Electrical Engineering student.",
-  line2: "As a back-end developer, I diligently focus on the system's core mechanisms and work to extend its functionality, ensuring efficiency and scalability. Additionally, I am also concentrating on the field of machine learning to become more versatile and better equipped to handle a broader range of tasks at work.",
-  line3Part1: "Beyond coding and innovation in engineering,",
-  line3Part2: " my hideout is often at 24 Hour Fitness, where I relieve stress and work toward becoming a stronger, healthier version of myself.",
+  part3: "In my free time, I'm a big matcha fan, so I often search for the best matcha spots in LA.",
+  line2: "I also love playing PS5 with my younger brother at home, watching League of Legends (LOL), and binge-watching K-dramas.",
 };
 const Background = () => (
   <section className="section background">
