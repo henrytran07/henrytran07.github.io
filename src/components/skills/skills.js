@@ -21,7 +21,7 @@ const Skills = () => (
               <li key={index} className="skillz__category__item">{framework}</li>
             ))}
           </ul>
-        </div>
+        </div>˜
 
         {/* Machine Learning Section */}
         <div className="skillz__category">

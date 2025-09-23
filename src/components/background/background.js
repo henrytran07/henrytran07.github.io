@@ -1,5 +1,4 @@
-import * as React from "react"
-
+import * as React from "react";
 
 const backgroundData = {
   title: "Background",
@@ -9,25 +8,25 @@ const backgroundData = {
   line2: "I'm a big matcha fan, so I often search for the best matcha spots in LA on Fridays.",
   line3Part1: "I also love playing PS5 with my younger brother at home, watching League of Legends (LOL), and binge-watching K-dramas.",
 };
+
 const Background = () => (
   <section className="section background">
     <div className="section__title">{backgroundData.title}</div>
     <div className="section__content">
       <p>
         {backgroundData.part1}
-        <a className="underline-link" href={backgroundData.part2Href} target="_blank" rel="noreferrer">{backgroundData.part2}</a>
-        {backgroundData.part3}
+        <a className="underline-link" href={backgroundData.part2Href} target="_blank" rel="noreferrer">
+          {backgroundData.part2}
+        </a>
       </p>
       <p>
         {backgroundData.line2}
       </p>
       <p>
-        <strong>{backgroundData.line3Part1}</strong>{backgroundData.line3Part2}
-        <a className="underline-link" href={backgroundData.line3Part3Href} target="_blank" rel="noreferrer">{backgroundData.line3Part3}</a>
-        {backgroundData.line3Part4}
+        <strong>{backgroundData.line3Part1}</strong>
       </p>
     </div>
   </section>
-)
+);
 
-export default Background
+export default Background;
