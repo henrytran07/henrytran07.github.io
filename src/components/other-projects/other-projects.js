@@ -6,7 +6,7 @@ const otherProjectsData = [
   {
     "name": "Chess Game",
     "url": "https://github.com/henrytran07/ChessGame",
-    "description": "I developed a fully functional chess game for 1v1 players and am now enhancing it with machine learning to incorporate a bot that can play against users<br> <a class='small' href='https://github.com/henrytran07/ChessGame'>",
+    "description": "I developed a fully functional chess game for 1v1 players<br> <a class='small' href='https://github.com/henrytran07/ChessGame'>",
     "used": [
       {"thing": "C++"},
       {"thing": "Data Structure and Algorithm"},
