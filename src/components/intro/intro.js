@@ -3,14 +3,15 @@ import "./intro.scss"
 
 
 const introData = {
-  title: "Hello! ",
+  title: "Hi! ",
   beforeName: "I'm ",
-  name: "Henry Tran - ",
-  afterName: "an aspiring electrical engineering undergraduate with a strong passion for backend server development.",
+  name: "Henry. It is nice to meet you",
+  afterName: " ",
   contact: "Get in touch ",
   email: "henrytran0715@gmail.com",
   mailTo: "mailto:henrytran0715@gmail.com",
 };
+
 const Intro = () => {
   const [isHovering, setIsHovering] = React.useState(false);
   const onMouseOver = _ => {
