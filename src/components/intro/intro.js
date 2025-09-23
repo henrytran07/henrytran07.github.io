@@ -11,7 +11,6 @@ const introData = {
   email: "henrytran0715@gmail.com",
   mailTo: "mailto:henrytran0715@gmail.com",
 };
-
 const Intro = () => {
   const [isHovering, setIsHovering] = React.useState(false);
   const onMouseOver = _ => {
