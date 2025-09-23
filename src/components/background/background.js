@@ -22,9 +22,6 @@ const Background = () => (
       <p>
         {backgroundData.line2}
       </p>
-      <p>
-        {backgroundData.line3Part1}
-      </p>
     </div>
   </section>
 );

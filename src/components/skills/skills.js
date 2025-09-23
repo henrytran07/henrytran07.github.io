@@ -2,7 +2,7 @@ import * as React from "react";
 import "./skills.scss";
 
 const skillsData = {
-  "backendTitle": "Backend",
+  "backendTitle": "Programming Language",
   "backendframeworks": ["Python", "C++"],
   "mlTitle": "Machine Learning", 
   "mlframeworks": ["LLM", "Supervised Learning"],
