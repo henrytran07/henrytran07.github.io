@@ -1,14 +1,20 @@
-import * as React from "react"
-import "./experience.scss"
-
+import * as React from "react";
+import "./experience.scss";
 
 const experienceData = [
   {
-    "company": "Mount San Antonio College",
+    "institution": "Mount San Antonio College",
     "time": "July 2023 - May 2024",
-    "position": "Undergraduate Student Researcher"
-  },
-]
+    "position": "Undergraduate Student Researcher",
+    "url": "https://www.mtsac.edu/"  
+  }, 
+  {
+    "institution": "Algoverse",
+    "time": "May 2025 - now",
+    "position": "Machine Learning Researcher",
+    "url": "https://www.algoverse.com" 
+  }
+];
 
 const Experience = () => (
   <section className="section experience">
@@ -16,11 +22,11 @@ const Experience = () => (
     <div className="section__content">
       <div className="jobs">
         {
-          experienceData.map((data) => (
-            <div className="job">
+          experienceData.map((data, index) => (
+            <div key={index} className="job">
               <div className="time-place">
                 <div className="job__company">
-                  <a href={data.url} target="_blank" rel="noreferrer">{data.company}</a>
+                  <a href={data.url} target="_blank" rel="noreferrer">{data.institution}</a>
                 </div>
                 <div className="job__time">{data.time}</div>
               </div>
@@ -33,6 +39,6 @@ const Experience = () => (
       <a href="./henry_tran_resume.pdf" target="_blank" rel="noreferrer" className="arrow-link">View My Resume</a>
     </div>
   </section>
-)
+);
 
-export default Experience
+export default Experience;

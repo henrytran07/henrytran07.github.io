@@ -23,7 +23,7 @@ const Background = () => (
         {backgroundData.line2}
       </p>
       <p>
-        <strong>{backgroundData.line3Part1}</strong>
+        {backgroundData.line3Part1}
       </p>
     </div>
   </section>
