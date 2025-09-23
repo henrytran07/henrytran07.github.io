@@ -6,6 +6,8 @@ const skillsData = {
   "backendframeworks": ["Python", "C++"],
   "mlTitle": "Machine Learning", 
   "mlframeworks": ["LLM", "Supervised Learning"],
+  "dsTitle": "Data Science", 
+  "dataScienceSkills": ["Pandas", "Matplotlib (plt)", "NumPy"],
 };
 
 const Skills = () => (
@@ -21,7 +23,7 @@ const Skills = () => (
               <li key={index} className="skillz__category__item">{framework}</li>
             ))}
           </ul>
-        </div>˜
+        </div>
 
         {/* Machine Learning Section */}
         <div className="skillz__category">
@@ -29,6 +31,16 @@ const Skills = () => (
           <ul>
             {skillsData.mlframeworks.map((framework, index) => (
               <li key={index} className="skillz__category__item">{framework}</li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Data Science Section */}
+        <div className="skillz__category">
+          <div className="skillz__category__label">{skillsData.dataScienceTitle}</div>
+          <ul>
+            {skillsData.dataScienceSkills.map((skill, index) => (
+              <li key={index} className="skillz__category__item">{skill}</li>
             ))}
           </ul>
         </div>
