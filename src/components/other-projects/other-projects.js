@@ -6,7 +6,7 @@ const otherProjectsData = [
   {
     "name": "Chess Game",
     "url": "https://github.com/henrytran07/ChessGame",
-    "description": "I developed a fully functional chess game for 1v1 players<br> <a class='small' href='https://github.com/henrytran07/ChessGame'>",
+    "description": "I developed a fully functional chess game for 1v1 players.<br> <a class='small' href='https://github.com/henrytran07/ChessGame'>",
     "used": [
       {"thing": "C++"},
       {"thing": "Data Structure and Algorithm"},
@@ -26,8 +26,8 @@ const otherProjectsData = [
 ]
 
 const OtherProjects = () => (
-  <section className="section projects">
-    <div className="section__title">Other Projects</div>
+  <section className="section other-projects">
+    <div className="section__title">Projects</div>
     <div className="section__content">
       {
         otherProjectsData.map((project) => (
