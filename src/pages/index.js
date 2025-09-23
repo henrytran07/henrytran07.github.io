@@ -9,7 +9,6 @@ import Background from "../components/background/background";
 import Skills from "../components/skills/skills";
 import Experience from "../components/experience/experience";
 import OtherProjects from "../components/other-projects/other-projects";
-import Footer from "../components/footer/footer";
 import Scroll from "../components/scroll";
 
 const IndexPage = () => (
@@ -22,7 +21,6 @@ const IndexPage = () => (
     <Skills />
     <Experience />
     <OtherProjects />
-    <Footer />
   </>
 )
 
