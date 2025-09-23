@@ -19,9 +19,9 @@ const IndexPage = () => (
     <Switch />
     <Intro />
     <Background />
-    <Skills />
     <Experience />
     <OtherProjects />
+    <Skills />
     <Footer />
   </>
 )
