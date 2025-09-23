@@ -6,8 +6,8 @@ const backgroundData = {
   part1: "I am currently an electrical engineering & computer science (EECS) student at ",
   part2: "Mount San Antonio College",
   part2Href: "https://www.mtsac.edu/",
-  part3: "In my free time, I'm a big matcha fan, so I often search for the best matcha spots in LA.",
-  line2: "I also love playing PS5 with my younger brother at home, watching League of Legends (LOL), and binge-watching K-dramas.",
+  line2: "I'm a big matcha fan, so I often search for the best matcha spots in LA on Fridays.",
+  line3: "I also love playing PS5 with my younger brother at home, watching League of Legends (LOL), and binge-watching K-dramas.",
 };
 const Background = () => (
   <section className="section background">
