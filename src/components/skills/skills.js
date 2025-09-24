@@ -17,7 +17,7 @@ const Skills = () => (
     <div className="section__title">Skills</div>
     <div className="section__content">
       <div className="skillz">
-        {/* Backend Section */}
+        {/* Programming Section */}
         <div className="skillz__category">
           <div className="skillz__category__label">{skillsData.backendTitle}</div>
           <ul>

@@ -1,5 +1,11 @@
 @import "src/scss/globals";
 .skills {
+  .section__title {
+    margin-bottom: 20px;  // Adds space below the title to create a new line
+    display: block;  // Ensures the title takes up the full width of the section
+    font-size: 24px;  // Adjust the font size for the title
+    font-weight: bold;  // Bold title text
+  }
   .skillz {
     display: flex;
     justify-content: space-between;
