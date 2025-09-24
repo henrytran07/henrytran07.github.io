@@ -4,8 +4,8 @@ import "./intro.scss"
 
 const introData = {
   title: "Hi! ",
-  beforeName: "I'm ",
-  name: "Henry. It is nice to meet you",
+  beforeName: "I'm Henry. ",
+  name: "It is nice to meet you",
   afterName: " ",
   contact: "Get in touch ",
   email: "henrytran0715@gmail.com",
