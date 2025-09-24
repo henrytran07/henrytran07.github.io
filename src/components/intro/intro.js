@@ -36,7 +36,6 @@ const Intro = () => {
 
     <h2 className="intro__tagline">{introData.beforeName}
       <span className="name">{introData.name}</span>{introData.afterName}
-      <span className="emoji technologist"></span>
     </h2>
 
     <h3 className="intro__contact">
