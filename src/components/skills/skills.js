@@ -14,7 +14,7 @@ const skillsData = {
 
 const Skills = () => (
   <section className="section skills">
-    <div className="section__title">Skills</div>
+    <div className="section__title">Skills <br /></div>
     <div className="section__content">
       <div className="skillz">
         {/* Programming Section */}
