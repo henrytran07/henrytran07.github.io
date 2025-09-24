@@ -16,21 +16,21 @@ const researchData = [
   },
 ]
 
-const OtherResearch= () => (
-  <section className="section other-research">
+const OtherResearch = () => (
+  <section className="section other-projects">
     <div className="section__title">Research</div>
     <div className="section__content">
       {
-        researchData.map((research) => (
-          <div className="research">
-            <div className="research__name">
-              <a href={research.url} target="_blank" rel="noreferrer" className="arrow-link">{research.name}</a>
+        researchData.map((project) => (
+          <div className="project">
+            <div className="project__name">
+              <a href={project.url} target="_blank" rel="noreferrer" className="arrow-link">{project.name}</a>
             </div>
-            <p>{Parser(research.description)}</p>
-            <div className="research__used">
+            <p>{Parser(project.description)}</p>
+            <div className="project__used">
               {
-                research.used.map((item) => (
-                  <span className="research__used__item">{item.thing}</span>
+                project.used.map((item) => (
+                  <span className="project__used__item">{item.thing}</span>
                 ))
               }
             </div>
