@@ -1,24 +1,27 @@
-import * as React from "react"
+import React, { useEffect } from 'react';
 
-const seoData = {
-  "title": "Henry Tran",
-  "description": "MtSAC Henry Tran",
-  "author": "Henry Tran",
-  "siteUrl": "https://github.com/henrytran07/henrytran07.github.io",
-}
+const Seo = () => {
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = "./images/emojis/henry-tran.JPG"; // Path to the favicon
+    document.head.appendChild(link);
+  }, []); // Empty dependency array to run this only once when component mounts
 
-const Seo = () => (
-  <>
-    <title>{seoData.title}</title>
-    <meta name="description" content={seoData.description} />
-    <meta property="og:title" content={seoData.title} />
-    <meta property="og:description" content={seoData.description} />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content={seoData.author} />
-    <meta name="twitter:title" content={seoData.title} />
-    <meta name="twitter:description" content={seoData.description} />
-  </>
-)
+  return (
+    <>
+      {/* SEO meta tags */}
+      <title>Henry Tran</title>
+      <meta name="description" content="MtSAC Henry Tran" />
+      <meta property="og:title" content="Henry Tran" />
+      <meta property="og:description" content="MtSAC Henry Tran" />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content="Henry Tran" />
+      <meta name="twitter:title" content="Henry Tran" />
+      <meta name="twitter:description" content="MtSAC Henry Tran" />
+    </>
+  );
+};
 
-export default Seo
+export default Seo;
