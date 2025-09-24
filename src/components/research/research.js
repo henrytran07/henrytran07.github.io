@@ -29,8 +29,8 @@ const OtherResearch= () => (
             <p>{Parser(research.description)}</p>
             <div className="research__used">
               {
-                research.used.map((research_item) => (
-                  <span className="research__used__item">{research_item.thing}</span>
+                research.used.map((item) => (
+                  <span className="research__used__item">{item.thing}</span>
                 ))
               }
             </div>
