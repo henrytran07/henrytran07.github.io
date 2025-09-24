@@ -2,7 +2,7 @@ import * as React from "react"
 
 const seoData = {
   "title": "Henry Tran",
-  "description": "Henry Tran is a dedicated undergraduate electrical engineering student with a passion for back-end software development.",
+  "description": "MtSAC Henry Tran",
   "author": "Henry Tran",
   "siteUrl": "https://github.com/henrytran07/henrytran07.github.io",
 }
