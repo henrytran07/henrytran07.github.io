@@ -45,7 +45,7 @@ const Scroll = () => {
   return (
     <>
       <button id="top-button" ref={topButtonRef} onClick={handleClick} style={{ display: showTopButton ? 'block' : 'none' }}>
-        <img src="./images/emojis/pointing-up.png" alt=""/>
+        <img src="./images/emojis/henry-tran.JPG" alt=""/>
       </button>
     </>
   );
