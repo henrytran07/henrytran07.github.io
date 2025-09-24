@@ -4,23 +4,14 @@ import "./research.scss"
 
 const researchData = [
   {
-    "name": "Chess Game",
+    "name": "Feedback Distillation: Teaching Lightweight to Mimic Expert Feedback in Reasoning Tasks",
     "url": "https://github.com/henrytran07/ChessGame",
-    "description": "Developed a fully functional chess game for 1v1 players.<br> <a class='small' href='https://github.com/henrytran07/ChessGame'>",
+    "description": "....<br> <a class='small' href='https://github.com/henrytran07/ChessGame'>",
     "used": [
-      {"thing": "C++"},
-      {"thing": "Data Structure and Algorithm"},
-      {"thing": "Object Oriented and Polymorphism"},
-    ]
-  },
-  {
-    "name": "Monopoly",
-    "url": "https://github.com/henrytran07/Monopoly",
-    "description": "Created a full functional monopoly for 4 players.<br> <a class='small' href='https://github.com/henrytran07/Monopoly'>",
-    "used": [
-      {"thing": "C++"},
-      {"thing": "Data Structure and Algorithm"},
-      {"thing": "Object Oriented and Polymorphism"},
+      {"thing": "Python"},
+      {"thing": "Supervised Learning"},
+      {"thing": "Numpy"},
+      {"thing": "Pandas"},
     ]
   },
 ]
@@ -39,7 +30,7 @@ const OtherResearch= () => (
             <div className="research__used">
               {
                 research.used.map((research_item) => (
-                  <span className="project__used__item">{research_item.thing}</span>
+                  <span className="research__used__item">{research_item.thing}</span>
                 ))
               }
             </div>
