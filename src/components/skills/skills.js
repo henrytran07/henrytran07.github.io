@@ -2,19 +2,19 @@ import * as React from "react";
 import "./skills.scss";
 
 const skillsData = {
-  "backendTitle": "Programming Language",
+  "backendTitle": "Programming",
   "backendframeworks": ["Python", "C++"],
   "mlTitle": "Machine Learning", 
   "mlframeworks": ["LLM", "Supervised Learning"],
-  "dsTitle": "Data Science", 
+  "dsTitle": "Analytics", 
   "dataScienceSkills": ["Pandas", "Matplotlib (plt)", "NumPy"],
-  "roboticTitle": "VEX Programming", 
+  "roboticTitle": "Robotics", 
   "roboticSkills": ["VEX Robotics", "Autonomous Driving", "Arcade Driving", "Tank Driving"]
 };
 
 const Skills = () => (
   <section className="section skills">
-    <div className="section__title">Skills <br /></div>
+    <div className="section__title">Skills</div>
     <div className="section__content">
       <div className="skillz">
         {/* Programming Section */}
