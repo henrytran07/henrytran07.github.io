@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 
 const Seo = () => {
   useEffect(() => {
+    // Set dynamic title for the webpage
+    document.title = "Henry Tran | Full-Stack Developer & Student at MtSAC"; 
+
     // Add favicon dynamically
     const link = document.createElement('link');
     link.rel = 'icon';
@@ -12,7 +15,6 @@ const Seo = () => {
   return (
     <>
       {/* SEO Meta Tags */}
-      <title>Henry Tran</title>
       <meta 
         name="description" 
         content="Official website of Henry Tran, a full-stack developer and student at MtSAC. Explore my projects in programming, AI, machine learning, and software engineering." 
@@ -25,7 +27,7 @@ const Seo = () => {
       <meta name="robots" content="index, follow" />
       
       {/* Open Graph Meta Tags */}
-      <meta property="og:title" content="Henry Tran | MtSAC - Full-Stack Developer & Student" />
+      <meta property="og:title" content="Henry Tran" />
       <meta 
         property="og:description" 
         content="Official website of Henry Tran, a full-stack developer and student at MtSAC. Explore my projects in programming, AI, machine learning, and software engineering." 
@@ -44,7 +46,7 @@ const Seo = () => {
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@henrytran" />
-      <meta name="twitter:title" content="Henry Tran | MtSAC - Full-Stack Developer & Student" />
+      <meta name="twitter:title" content="Henry Tran" />
       <meta 
         name="twitter:description" 
         content="Official website of Henry Tran, a full-stack developer and student at MtSAC. Explore my projects in programming, AI, machine learning, and software engineering." 
