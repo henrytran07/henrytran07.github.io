@@ -1,17 +1,18 @@
+@import "src/scss/globals";
+
 .other-projects {
   .project {
     max-width: 600px;
     margin-bottom: 50px;
-    padding: 0 15px; /* Adjust padding for spacing */
-
+    padding: 0 15px; /* Add some padding for better spacing */
+    
     &__name {
       margin-bottom: 10px;
-      font-size: 1.1rem; 
+      font-size: 1.1rem; /* Adjust font size */
       line-height: 1.5;
-      word-wrap: break-word; 
-      white-space: normal; 
-      display: block; 
-      overflow-wrap: break-word; /* Ensure long text wraps correctly */
+      word-wrap: break-word; /* Allow long names to break into the next line */
+      white-space: normal; /* Ensures the text wraps when needed */
+      display: block; /* Ensures the name takes full width of its container */
     }
 
     p {
@@ -42,15 +43,14 @@
   @media (max-width: 768px) {
     .project {
       max-width: 100%; /* Full width on smaller screens */
-      padding: 0 15px; /* Add padding for better spacing */
-      
+      padding: 0 15px; /* Add some padding for better spacing */
+
       &__name {
         font-size: 1rem; /* Adjust font size for smaller screens */
-        margin-bottom: 8px; /* Reduce margin on small screens */
       }
 
       p {
-        font-size: 0.85rem; /* Smaller font size for paragraphs */
+        font-size: 0.85rem; /* Adjust paragraph font size for smaller screens */
       }
     }
   }
