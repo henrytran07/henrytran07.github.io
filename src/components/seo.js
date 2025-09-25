@@ -14,7 +14,7 @@ const Seo = () => {
       {/* SEO Meta Tags */}
       <title>Henry Tran | MtSAC</title>
       <meta name="description" content="Official page of Henry Tran, MtSAC student" />
-      <meta name="keywords" content="Henry Tran, MtSAC, student, programming, engineering, projects" />
+      <meta name="keywords" content="Henry Tran, MtSAC, student, programming, engineering, projects, machine learning, full-stack development, web development, React, JavaScript, Python, data science, AI, software development, engineering student, coding, algorithm, TensorFlow, computer science, cloud computing, data analysis, deep learning, robotics, technology, coding projects, GitHub, software engineer, innovation, Huu Loc Tran" />
       <meta name="author" content="Henry Tran" />
       <meta name="robots" content="index, follow" />
       <meta property="og:title" content="Henry Tran | MtSAC" />
