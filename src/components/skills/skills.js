@@ -5,7 +5,7 @@ const skillsData = {
   "backendTitle": "Programming",
   "backendframeworks": ["Python", "C++"],
   "mlTitle": "Machine Learning", 
-  "mlframeworks": ["LLM", "Supervised Learning"],
+  "mlframeworks": ["LLM", "Supervised Learning", "Unsupervised Learning", "Reinforcement Learning"],
   "dsTitle": "Analytics", 
   "dataScienceSkills": ["Pandas", "Matplotlib (plt)", "NumPy"],
   "roboticTitle": "Robotics", 
