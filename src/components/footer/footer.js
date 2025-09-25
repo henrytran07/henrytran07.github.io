@@ -28,7 +28,7 @@ const Footer = () => (
       }
     </div>
     <div className="footer__copyright">
-      <p>© 2025 <a href="https://henrytran07.github.io" target="_blank" rel="noreferrer">henrytran07.github.io</a></p>
+      <p>©<a href="https://henrytran07.github.io" target="_blank" rel="noreferrer">henrytran07.github.io 2025</a></p>
     </div>
   </footer>
 )
