@@ -2,10 +2,8 @@ import React, { useEffect } from 'react';
 
 const Seo = () => {
   useEffect(() => {
-    // Set dynamic title for the webpage
-    document.title = "Henry Tran | Full-Stack Developer & Student at MtSAC"; 
+    document.title = "Henry Tran"; 
 
-    // Add favicon dynamically
     const link = document.createElement('link');
     link.rel = 'icon';
     link.href = '/images/emojis/henry-tran.JPG'; // Absolute path for the favicon
