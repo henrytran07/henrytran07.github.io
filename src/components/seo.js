@@ -5,24 +5,54 @@ const Seo = () => {
     // Add favicon dynamically
     const link = document.createElement('link');
     link.rel = 'icon';
-    link.href = './images/emojis/henry-tran.JPG'; // Path to the favicon
+    link.href = '/images/emojis/henry-tran.JPG'; // Absolute path for the favicon
     document.head.appendChild(link);
   }, []); // Empty dependency array to run only once on mount
 
   return (
     <>
       {/* SEO Meta Tags */}
-      <title>Henry Tran | MtSAC</title>
-      <meta name="description" content="Official page of Henry Tran, MtSAC student" />
-      <meta name="keywords" content="Henry Tran, MtSAC, student, programming, engineering, projects, machine learning, full-stack development, web development, React, JavaScript, Python, data science, AI, software development, engineering student, coding, algorithm, TensorFlow, computer science, cloud computing, data analysis, deep learning, robotics, technology, coding projects, GitHub, software engineer, innovation, Huu Loc Tran" />
+      <title>Henry Tran | MtSAC - Full-Stack Developer & Student</title>
+      <meta 
+        name="description" 
+        content="Official website of Henry Tran, a full-stack developer and student at MtSAC. Explore my projects in programming, AI, machine learning, and software engineering." 
+      />
+      <meta 
+        name="keywords" 
+        content="Henry Tran, MtSAC, student, full-stack development, programming, engineering, projects, machine learning, AI, data science, JavaScript, React, Python, TensorFlow, software development, robotics, coding, technology, GitHub, innovation" 
+      />
       <meta name="author" content="Henry Tran" />
       <meta name="robots" content="index, follow" />
-      <meta property="og:title" content="Henry Tran | MtSAC" />
-      <meta property="og:description" content="Official page of Henry Tran, MtSAC student" />
-      <meta property="og:image" content="./images/emojis/henry-tran.JPG" /> {/* Ensure a proper image URL */}
-      <meta property="og:url" content="https://henrytran07.github.io/" /> {/* Replace with your site URL */}
+      
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Henry Tran | MtSAC - Full-Stack Developer & Student" />
+      <meta 
+        property="og:description" 
+        content="Official website of Henry Tran, a full-stack developer and student at MtSAC. Explore my projects in programming, AI, machine learning, and software engineering." 
+      />
+      <meta 
+        property="og:image" 
+        content="https://henrytran07.github.io/images/emojis/henry-tran.JPG" 
+      />
+      <meta 
+        property="og:url" 
+        content="https://henrytran07.github.io/" 
+      /> 
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Henry Tran" />
+
+      {/* Twitter Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="@henrytran" />
+      <meta name="twitter:title" content="Henry Tran | MtSAC - Full-Stack Developer & Student" />
+      <meta 
+        name="twitter:description" 
+        content="Official website of Henry Tran, a full-stack developer and student at MtSAC. Explore my projects in programming, AI, machine learning, and software engineering." 
+      />
+      <meta 
+        name="twitter:image" 
+        content="https://henrytran07.github.io/images/emojis/henry-tran.JPG" 
+      />
     </>
   );
 };
