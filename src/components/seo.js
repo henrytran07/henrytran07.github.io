@@ -12,7 +12,7 @@ const Seo = () => {
   return (
     <>
       {/* SEO Meta Tags */}
-      <title>Henry Tran | MtSAC - Full-Stack Developer & Student</title>
+      <title>Henry Tran</title>
       <meta 
         name="description" 
         content="Official website of Henry Tran, a full-stack developer and student at MtSAC. Explore my projects in programming, AI, machine learning, and software engineering." 
