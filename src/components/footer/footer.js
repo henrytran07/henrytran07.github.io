@@ -1,25 +1,23 @@
-import * as React from "react"
-import "./footer.scss"
-import "./footer.scss"
-import 'font-awesome/css/font-awesome.min.css'
+import * as React from "react";
+import "./footer.scss";
 
 const socialData = [
   {
     "title": "email",
     "url": "mailto:henrytran0715@gmail.com",
-    "icon": "fa-envelope"
+    "icon": '/images/emojis/gmail_icon.png' // Assuming you downloaded email icon in SVG format
   },
   {
     "title": "github",
     "url": "https://github.com/henrytran07",
-    "icon": "fa-github" 
+    "icon": '/images/emojis/github_icon.png'// Assuming you downloaded GitHub icon in SVG format
   },
   {
     "title": "linkedin",
     "url": "https://www.linkedin.com/in/henry-tran-8b6025314/",
-    "icon": "fa-linkedin"
+    "icon": '/images/emojis/linkedin_icon.png' // Assuming you downloaded LinkedIn icon in SVG format
   },
-]
+];
 
 const Footer = () => (
   <footer className="footer">
@@ -27,7 +25,7 @@ const Footer = () => (
       {
         socialData.map((social) => (
           <a href={social.url} target="_blank" rel="noreferrer" key={social.title} title={social.title}>
-            <i className={`fa ${social.icon}`} style={{ fontSize: "24px", marginRight: "8px" }}></i> {/* Display icon */}
+            <img src={`./assets/icons/${social.icon}`} alt={social.title} style={{ width: "24px", height: "24px", marginRight: "8px" }} />
           </a>
         ))
       }
@@ -38,4 +36,4 @@ const Footer = () => (
   </footer>
 );
 
-export default Footer
+export default Footer;
