@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "gatsby": "^5.13.1",
     "gatsby-plugin-sass": "^6.13.0",
     "html-react-parser": "^5.1.1",
