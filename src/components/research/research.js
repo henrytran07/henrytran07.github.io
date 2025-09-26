@@ -10,8 +10,8 @@ const researchData = [
     "used": [
       {"thing": "Python"},
       {"thing": "Supervised Learning"},
-      {"thing": "Numpy"},
-      {"thing": "Pandas"},
+      {"thing": "LLM"},
+      {"thing" : "Knowledge Distillation"},
     ]
   },
 ]
