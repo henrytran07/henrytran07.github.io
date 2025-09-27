@@ -36,9 +36,6 @@
   font-size: 1.8rem;
   transition: color 0.3s;
 
-  position: absolute;
-  right: 25%; /* Move the link 50% to the right */
-
   &:hover {
     color: #B22222; /* Hover color remains as red */
   }
