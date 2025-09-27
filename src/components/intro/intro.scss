@@ -146,32 +146,163 @@
   }
 
 
-.my_intro {
-  font-size: 4.0rem; /* Default font size for large screens */
-  font-weight: bold; 
-  /* Adjust font-size for different breakpoints */
-  @include desktop {
-    font-size: 2.25rem;
-  }
+  @import "src/scss/globals";
 
-  @include tablet {
-    font-size: 2rem;
+  .intro {
+    padding: 0; /* Remove all padding */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align content to the top to reduce space */
+    align-items: center; /* Center the content horizontally */
+    max-width: 1440px;
+    margin: 0 auto; /* Center the container horizontally */
+    
+    /* Remove any breakpoints' padding to reduce space further */
+    @include weird-medium {
+      padding: 0;
+    }
+  
+    @include phablet {
+      padding: 0;
+    }
+  
+    @include mobile {
+      padding: 0;
+    }
+  
+    &__hello, &__tagline, &__contact, .my_intro {
+      margin: 0; /* Remove margin between elements */
+      padding: 0; /* Remove any internal padding */
+  
+      font-size: 2.5rem; /* Default font size for large screens */
+      font-weight: bold; /* Set font weight to bold */
+  
+      /* Adjust font-size for different breakpoints */
+      @include desktop {
+        font-size: 2.25rem;
+      }
+  
+      @include tablet {
+        font-size: 2rem;
+      }
+  
+      @include phablet {
+        font-size: 1.75rem;
+      }
+  
+      @include small-mobile {
+        font-size: 1.5rem;
+      }
+  
+      @include tiny-mobile {
+        font-size: 1.4rem;
+      }
+  
+      .emoji {
+        width: 40px;
+        height: 40px;
+        @include desktop {
+          width: 35px;
+          height: 35px;
+        }
+        @include tablet {
+          width: 30px;
+          height: 30px;
+        }
+        @include small-mobile {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  
+    .intro__image {
+      width: 100%; /* Full width */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Ensure the image covers the area without distortion */
+      max-width: 500px; /* Limit image size */
+    }
+  
+    &__hello {
+      font-weight: 300;
+      margin-bottom: 0; /* Remove bottom margin */
+    }
+  
+    &__tagline {
+      font-weight: 300;
+      max-width: 700px;
+      margin-bottom: 0; /* Remove bottom margin */
+    }
+  
+    &__contact {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin: 0; /* Remove margin */
+      
+      @include phablet {
+        font-size: 1rem;
+      }
+  
+      .emoji {
+        &.pointer {
+          background-image: url('../../img/emojis/pointright.png');
+          width: 30px;
+          height: 30px;
+          margin: 0 5px;
+          vertical-align: text-bottom;
+  
+          @include phablet {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+      .highlight-link {
+        @include transition;
+        font-weight: 400;
+        text-decoration: none;
+        display: inline-block;
+        padding: 2px 3px;
+        text-decoration: none;
+        box-shadow: inset 0 -3px 0 $blue;
+        &:hover {
+          box-shadow: inset 0 -33px 0 0 $blue;
+          color: $white;
+        }
+      }
+    }
   }
-
-  @include phablet {
-    font-size: 1.75rem;
+  
+  .my_intro {
+    font-size: 4.0rem; /* Default font size for large screens */
+    font-weight: bold;
+    margin-bottom: 0; /* Remove any bottom margin to close the gap */
+  
+    /* Adjust font-size for different breakpoints */
+    @include desktop {
+      font-size: 2.25rem;
+    }
+  
+    @include tablet {
+      font-size: 2rem;
+    }
+  
+    @include phablet {
+      font-size: 1.75rem;
+    }
+  
+    @include small-mobile {
+      font-size: 1.5rem;
+    }
+  
+    @include tiny-mobile {
+      font-size: 1.4rem;
+    }
+  
+    font-weight: 300; /* Optional: Set font weight */
+    max-width: 700px; /* Optional: Limit the width of the tagline */
+    text-align: center; /* Ensure text is centered horizontally */
+    margin-bottom: 0; /* Reduce bottom margin for minimal gap */
   }
-
-  @include small-mobile {
-    font-size: 1.5rem;
-  }
-
-  @include tiny-mobile {
-    font-size: 1.4rem;
-  }
-
-  font-weight: 300; /* Optional: Set font weight */
-  max-width: 700px; /* Optional: Limit the width of the tagline */
-  margin-bottom: 20px; /* Optional: Add margin for spacing */
-  text-align: center; /* Ensure text is centered horizontally */
-}
+  
