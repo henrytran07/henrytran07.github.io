@@ -37,10 +37,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar__brand">
           {/* Make "Henry Tran" logo a link to the external URL */}
-          <span
-            onClick={() => window.location.href = "https://henrytran07.github.io/"}
-            className="navbar__logo"
-          >
+          <span onClick={scrollToTop} className="navbar__logo">
             Henry Tran
           </span>
         </div>
