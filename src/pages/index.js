@@ -12,9 +12,11 @@ import OtherProjects from "../components/other-projects/other-projects";
 import OtherResearch from "../components/research/research";
 import Footer from "../components/footer/footer";
 import Scroll from "../components/scroll";
+import Navbar from "../components/navbar"; 
 
 const IndexPage = () => (
   <>
+    <Navbar /> 
     <Scroll />
     <Seo/>
     <Switch />
