@@ -57,7 +57,13 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#projects" className="navbar__link">  {/* Pointing to the experience section */}
-                Projects
+                Project
+            </a>
+          </li>
+          <li>
+            {/* CV link (either internal or external) */}
+            <a href="./henry_tran_resume.pdf" target="_blank" rel="noreferrer" className="navbar__link">
+                My CV
             </a>
           </li>
         </ul>
