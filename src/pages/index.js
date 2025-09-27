@@ -1,10 +1,9 @@
-import * as React from "react"
+import * as React from "react";
 
-import Seo from "../components/seo"
+import Seo from "../components/seo";
 import Intro from "../components/intro/intro";
-import Switch from "../components/switch/switch";
-import "../scss/base.scss"
-import "../scss/fonts.scss"
+import "../scss/base.scss";
+import "../scss/fonts.scss";
 import Background from "../components/background/background";
 import Skills from "../components/skills/skills";
 import Experience from "../components/experience/experience";
@@ -14,20 +13,26 @@ import Footer from "../components/footer/footer";
 import Scroll from "../components/scroll";
 import Navbar from "../components/navbar"; 
 
-const IndexPage = () => (
-  <>
-    <Navbar /> 
-    <Scroll />
-    <Seo/>
-    <Switch />
-    <Intro />
-    <Background />
-    <Experience />
-    <OtherProjects />
-    <OtherResearch />
-    <Skills />
-    <Footer />
-  </>
-)
+const IndexPage = () => {
+  React.useEffect(() => {
+    // Apply night mode class directly when the component mounts
+    document.body.classList.add('night');
+  }, []); // This effect runs only once when the component is mounted
 
-export default IndexPage
+  return (
+    <>
+      <Navbar />
+      <Scroll />
+      <Seo />
+      <Intro />
+      <Background />
+      <Experience />
+      <OtherProjects />
+      <OtherResearch />
+      <Skills />
+      <Footer />
+    </>
+  );
+};
+
+export default IndexPage;
