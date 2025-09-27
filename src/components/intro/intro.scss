@@ -53,11 +53,9 @@
     }
 
     .intro__image {
-      width: 100px;  /* Resize width to 8px */
-      height: 100px;  /* Resize height to 8px */
-      border-radius: 50%;  /* Optional: make it circular */
+      width: 300px;  /* Resize width to 8px */
+      height: 300px;  /* Resize height to 8px */
       object-fit: cover;  /* Ensure the image covers the area without distortion */
-      margin-bottom: 20px;  /* Adjust space below the image */
     }
     
     &__hello {
