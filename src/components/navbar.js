@@ -51,14 +51,14 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <span onClick={() => setCurrentPage("research")} className="navbar__link">
-              Research
-            </span>
+            <a href="#research" className="navbar__link">  {/* Pointing to the experience section */}
+                Research
+            </a>
           </li>
           <li>
-            <span onClick={() => setCurrentPage("skills")} className="navbar__link">
-              Skills
-            </span>
+            <a href="#skills" className="navbar__link">  {/* Pointing to the experience section */}
+                Skills
+            </a>
           </li>
         </ul>
         <div className="navbar__hamburger" onClick={toggleMobileMenu}>

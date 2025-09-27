@@ -17,7 +17,7 @@ const researchData = [
 ]
 
 const OtherResearch = () => (
-  <section className="section other-projects">
+  <section id="research" className="section other-projects">
     <div className="section__title">Research</div>
     <div className="section__content">
       {

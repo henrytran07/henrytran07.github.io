@@ -13,7 +13,7 @@ const skillsData = {
 };
 
 const Skills = () => (
-  <section className="section skills">
+  <section id="skills" className="section skills">
     <div className="section__title">Skills</div>
     <div className="section__content">
       <div className="skillz">
