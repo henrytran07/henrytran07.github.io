@@ -3,14 +3,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import IndexPage from '../pages/index';
-import About from '../pages/about'; // Import the About page
+import CV from '../pages/about'; // Import the About page
+
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/" exact component={IndexPage} /> {/* Home page */}
-        <Route path="/cv" component={About} /> {/* About page */}
+        <Route path="/cv" component={CV} /> {/* About page */}
       </Switch>
     </Router>
   );
