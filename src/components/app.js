@@ -5,13 +5,15 @@ import Cv from "./Cv";
 import Navbar from "../components/navbar";
 
 function App() {
+  // State to track if we're in the browser (after mount)
   const [isBrowser, setIsBrowser] = useState(false);
 
+  // UseEffect to update state after the component mounts in the browser
   useEffect(() => {
     setIsBrowser(true);
   }, []);
 
-  // Return a server-safe version during SSR
+  // During SSR (before the app mounts), return a default version (fallback)
   if (!isBrowser) {
     return (
       <div>
@@ -23,7 +25,7 @@ function App() {
     );
   }
 
-  // Client-side routing
+  // Client-side routing after the page has mounted in the browser
   return (
     <Router>
       <div>

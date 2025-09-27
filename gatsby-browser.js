@@ -1,7 +1,23 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
- */
+import React, { useState, useEffect } from 'react';
 
-// You can delete this file if you're not using it
+export const wrapRootElement = ({ element }) => {
+  const [isBrowser, setIsBrowser] = useState(false);
+
+  useEffect(() => {
+    setIsBrowser(true); // Set the flag once the component mounts in the browser
+  }, []);
+
+  if (!isBrowser) {
+    return (
+      <div>
+        <Navbar />
+        <main>
+          <IndexPage />  {/* Default page during SSR */}
+        </main>
+      </div>
+    );
+  }
+
+  // Return the root element once the app has mounted on the client side
+  return element;
+};
