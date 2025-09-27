@@ -13,18 +13,17 @@
   z-index: 1000;
 }
 
-.navbar__brand {
-  position: absolute; /* Position it relative to the navbar */
-  left: 50%; /* Move to the center of the navbar */
-  transform: translateX(-50%); /* Offset by 50% of its width to make it left of center */
-}
-
-.navbar__logo {
+.navbar__brand .navbar__logo {
   font-size: 1.8rem;
   text-decoration: none;
-  color: #B22222; /* Red color for logo */
+  color: #B22222; /* Set logo color to black */
   font-weight: bold;
   font-family: 'Pacifico', cursive;
+
+    /* Move 50% to the right */
+    position: relative;
+    left: 50%; /* Move logo to the right */
+    transform: translateX(50%); /* Adjust by 50% to make it move right */
 }
 
 .navbar__links {
