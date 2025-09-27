@@ -16,10 +16,6 @@ const Navbar = () => {
     setIsMobile(!isMobile);
   };
 
-    const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });  // Scroll to the top smoothly
-  };
-
   // Function to render pages based on state
   const renderPage = () => {
     switch (currentPage) {
