@@ -37,15 +37,6 @@ const Intro = () => {
     <h2 className="intro__tagline">{introData.beforeName}
       <span className="name">{introData.name}</span>{introData.afterName}
     </h2>
-
-    <h3 className="intro__contact">
-      <span>{introData.contact}</span>
-      <span className="emoji pointer"></span>
-      <span>
-      <a href={introData.mailTo}
-         className="highlight-link">{introData.email}</a>
-    </span>
-    </h3>
   </header>
 };
 
