@@ -1,6 +1,8 @@
 @import "src/scss/globals";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap'); /* Import Montserrat font */
 
 .intro {
+  font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
   padding: 100px 100px; /* Remove all padding */
   margin: 0;  /* Remove all margins */
   height: 30vh; /* Full viewport height */
@@ -134,6 +136,7 @@
   margin: 0; /* Remove margin */
   padding: 0; /* Remove padding */
   text-align: center; /* Center text horizontally */
+  font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
 
   /* Adjust font-size for different breakpoints */
   @include desktop {
