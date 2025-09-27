@@ -35,7 +35,7 @@
   justify-content: flex-start;  /* Align the links to the left */
   gap: 50px;
   position: absolute;
-  left: 25%;  /* Move the links container to the center of the navbar */
+  right: 50%;  /* Move the links container to the center of the navbar */
   transform: translateX(-50%);  /* Center the links relative to the navbar */
 }
 
