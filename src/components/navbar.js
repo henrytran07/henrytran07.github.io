@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.scss"; // Your styles for the navbar
+import { Link } from "gatsby";
 
 // Dummy components to represent pages
 const Home = () => <h1></h1>;
@@ -41,9 +42,9 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar__brand">
           {/* Make "Henry Tran" logo a link to the external URL */}
-          <span onClick={scrollToTop} className="navbar__logo">
-            Henry Tran
-          </span>
+        <a href="https://henrytran07.github.io/" onClick={scrollToTop} className="navbar__logo" target="_blank" rel="noopener noreferrer">
+          Henry Tran
+        </a>
         </div>
         <ul className={isMobile ? "navbar__links mobile" : "navbar__links"}>
           <li>
