@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: navy;
+  background-color: url('../../img/switch/moon.svg') no-repeat center;
   color: white; /* Set the text color to black */
   position: fixed;
   top: 0;
@@ -45,7 +45,7 @@
 .navbar__line {
   width: 30px;
   height: 3px;
-  background-color: black; /* Change line color to black */
+  background-color: url('../../img/switch/moon.svg') no-repeat center; /* Change line color to black */
 }
 
 /* Mobile Menu (when navbar__hamburger is clicked) */
@@ -56,7 +56,7 @@
   position: absolute;
   top: 60px;
   right: 10px;
-  background-color: black;
+  background-color: url('../../img/switch/moon.svg') no-repeat center;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
