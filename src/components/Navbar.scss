@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -16,6 +18,7 @@
   text-decoration: none;
   color: white; /* Set logo color to black */
   font-weight: bold;
+  font-family: 'Pacifico', cursive;
 }
 
 .navbar__links {
