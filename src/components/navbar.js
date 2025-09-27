@@ -65,7 +65,7 @@ const Navbar = () => {
           <li>
             {/* CV link (either internal or external) */}
             <Link to="/about" className="navbar__link">
-              About Me
+              CV
             </Link>
           </li>
         </ul>

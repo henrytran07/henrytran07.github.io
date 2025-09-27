@@ -8,9 +8,9 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className="about-page">
-        <h1>About Me</h1>
-        <p>This is a dummy about page with information about me!</p>
+      <div className="CV-page">
+        <h1>Henry Tran</h1>
+        <p></p>
       </div>
       <Footer />
     </>
