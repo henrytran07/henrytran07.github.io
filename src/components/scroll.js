@@ -42,13 +42,7 @@ const Scroll = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  return (
-    <>
-      <button id="top-button" ref={topButtonRef} onClick={handleClick} style={{ display: showTopButton ? 'block' : 'none' }}>
-        <img src="./images/emojis/henry-tran.JPG" alt=""/>
-      </button>
-    </>
-  );
+  return null;
 };
 
 export default Scroll;
