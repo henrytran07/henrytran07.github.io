@@ -1,11 +1,10 @@
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   background-color: transparent;
-  color: white;
+  color: black; /* Set the text color to black */
   position: fixed;
   top: 0;
   width: 100%;
@@ -15,7 +14,7 @@
 .navbar__brand .navbar__logo {
   font-size: 1.8rem;
   text-decoration: none;
-  color: white;
+  color: black; /* Set logo color to black */
   font-weight: bold;
 }
 
@@ -25,13 +24,13 @@
 }
 
 .navbar__link {
-  color: white;
+  color: black; /* Set link color to black */
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s;
 
   &:hover {
-    color: #f0a500;
+    color: #f0a500; /* Hover color stays as is */
   }
 }
 
@@ -46,7 +45,7 @@
 .navbar__line {
   width: 30px;
   height: 3px;
-  background-color: white;
+  background-color: black; /* Change line color to black */
 }
 
 /* Mobile Menu (when navbar__hamburger is clicked) */
