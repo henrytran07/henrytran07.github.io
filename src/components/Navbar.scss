@@ -23,6 +23,9 @@
   align-items: center;
   position: absolute;  /* Position the logo inside the navbar */
   left: 25%;  /* Move logo to the center of the navbar */
+  &:hover {
+    color: #FFD700; /* Red color on hover */
+  }
 }
 
 
