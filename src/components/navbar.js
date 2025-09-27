@@ -64,9 +64,9 @@ const Navbar = () => {
           </li>
           <li>
             {/* CV link (either internal or external) */}
-            <a href="./henry_tran_resume.pdf" target="_blank" rel="noreferrer" className="navbar__link">
-               CV
-            </a>
+            <Link to="/about" className="navbar__link">
+              About Me
+            </Link>
           </li>
         </ul>
         <div className="navbar__hamburger" onClick={toggleMobileMenu}>
