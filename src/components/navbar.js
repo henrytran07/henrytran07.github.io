@@ -16,6 +16,10 @@ const Navbar = () => {
     setIsMobile(!isMobile);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
+
   // Function to render pages based on state
   const renderPage = () => {
     switch (currentPage) {
