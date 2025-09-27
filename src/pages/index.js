@@ -15,7 +15,7 @@ import Scroll from "../components/scroll";
 import Navbar from "../components/navbar"; 
 import ReactDOM from 'react-dom/client';  // For React 18
 import { BrowserRouter } from 'react-router-dom';  // Import BrowserRouter
-import App from './App';  // Import your main app component
+import App from "../components/app";  // Import your main app component
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
