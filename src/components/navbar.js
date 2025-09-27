@@ -36,7 +36,11 @@ const Navbar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar__brand">
-          <span onClick={() => setCurrentPage("home")} className="navbar__logo">
+          {/* Make "Henry Tran" logo a link to the external URL */}
+          <span
+            onClick={() => window.location.href = "https://henrytran07.github.io/"}
+            className="navbar__logo"
+          >
             Henry Tran
           </span>
         </div>
@@ -47,12 +51,12 @@ const Navbar = () => {
             </span>
           </li>
           <li>
-            <span onClick={() => setCurrentPage("skills")} className="navbar__link">
+            <span onClick={() => setCurrentPage("research")} className="navbar__link">
               Research
             </span>
           </li>
           <li>
-            <span onClick={() => setCurrentPage("research")} className="navbar__link">
+            <span onClick={() => setCurrentPage("skills")} className="navbar__link">
               Skills
             </span>
           </li>
