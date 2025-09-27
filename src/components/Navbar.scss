@@ -32,15 +32,20 @@
 }
 
 .navbar__link {
-  color: white; /* Set link color to black */
+  color: white; /* Link color set to white */
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s;
 
+  position: relative;
+  left: 50%; /* Move the link 50% to the right */
+  transform: translateX(-1000%); /* Move link further to the right */
+
   &:hover {
-    color: #B22222; /* Hover color stays as is */
+    color: #B22222; /* Hover color remains as red */
   }
 }
+
 
 /* Hamburger menu (visible on mobile) */
 .navbar__hamburger {
