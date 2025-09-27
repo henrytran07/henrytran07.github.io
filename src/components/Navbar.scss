@@ -16,15 +16,15 @@
 .navbar__brand .navbar__logo {
   font-size: 1.8rem;
   text-decoration: none;
-  color: #B22222; /* Set logo color to black */
+  color: #B22222; /* Red color for logo */
   font-weight: bold;
   font-family: 'Pacifico', cursive;
 
-    /* Move 50% to the right */
-    position: relative;
-    left: 50%; /* Move logo to the right */
-    transform: translateX(5000%); /* Adjust by 50% to make it move right */
+  position: absolute;  /* Position the logo inside the navbar */
+  left: 50%;  /* Move logo to the center of the navbar */
+  transform: translateX(-50%);  /* Adjust the logo 50% back to left */
 }
+
 
 .navbar__links {
   display: flex;
