@@ -63,7 +63,7 @@ const Navbar = () => {
           <li>
             {/* CV link (either internal or external) */}
             <a href="./henry_tran_resume.pdf" target="_blank" rel="noreferrer" className="navbar__link">
-                My CV
+               CV
             </a>
           </li>
         </ul>
