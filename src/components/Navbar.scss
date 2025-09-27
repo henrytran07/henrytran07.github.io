@@ -3,15 +3,52 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: #171c28;
-  background-size: contain;
-  color: white;
+  background-color: #171c28;
+  color: white; /* Set the text color to black */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 
+.navbar__brand .navbar__logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white; /* Set logo color to black */
+  font-weight: bold;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar__link {
+  color: #171c28; /* Set link color to black */
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #f0a500; /* Hover color stays as is */
+  }
+}
+
+/* Hamburger menu (visible on mobile) */
+.navbar__hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.navbar__line {
+  width: 30px;
+  height: 3px;
+  background-color: #171c28; /* Change line color to black */
+}
+
+/* Mobile Menu (when navbar__hamburger is clicked) */
 .navbar__links.mobile {
   display: flex;
   flex-direction: column;
@@ -19,15 +56,18 @@
   position: absolute;
   top: 60px;
   right: 10px;
-  background: #171c28;
-  background-size: cover;
+  background-color:#171c28;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.navbar__line {
-  width: 30px;
-  height: 3px;
-  background-color: #171c28; /* keep it simple; using an image here may not render well */
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
 }
