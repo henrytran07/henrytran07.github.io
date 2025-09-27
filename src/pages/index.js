@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Seo from "../components/seo"
 import Intro from "../components/intro/intro";
-// import Switch from "../components/switch/switch";
+import Switch from "../components/switch/switch";
 import "../scss/base.scss"
 import "../scss/fonts.scss"
 import Background from "../components/background/background";
@@ -19,7 +19,7 @@ const IndexPage = () => (
     <Navbar /> 
     <Scroll />
     <Seo/>
-    {/* <Switch /> */}
+    <Switch />
     <Intro />
     <Background />
     <Experience />
