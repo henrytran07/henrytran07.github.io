@@ -36,7 +36,7 @@
   gap: 50px;
   position: absolute;
   right: 50%;  /* Move the links container to the center of the navbar */
-  transform: translateX(50%);  /* Center the links relative to the navbar */
+  transform: translateX(100%);  /* Center the links relative to the navbar */
 }
 
 .navbar__link {
