@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: url('../img/switch/moon.svg') no-repeat center center;
+  background: #171c28;
   background-size: contain;
   color: white;
   position: fixed;
@@ -19,7 +19,7 @@
   position: absolute;
   top: 60px;
   right: 10px;
-  background: url('../img/switch/moon.svg') no-repeat center center;
+  background: #171c28;
   background-size: cover;
   padding: 20px;
   border-radius: 10px;
@@ -29,5 +29,5 @@
 .navbar__line {
   width: 30px;
   height: 3px;
-  background-color: white; /* keep it simple; using an image here may not render well */
+  background-color: #171c28; /* keep it simple; using an image here may not render well */
 }
