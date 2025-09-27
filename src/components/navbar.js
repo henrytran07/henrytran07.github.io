@@ -1,46 +1,74 @@
-
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // If using React Router for navigation
 import "./Navbar.scss"; // Your styles for the navbar
+
+// Dummy components to represent pages
+const Home = () => <h1>Henry Tran</h1>;
+const Experience = () => <h1>Experience</h1>;
+const Research = () => <h1>Research</h1>;
+const Skills = () => <h1>Skills</h1>;
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false); // State for toggling mobile menu
+  const [currentPage, setCurrentPage] = useState("home"); // State to track the current page
 
   // Toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsMobile(!isMobile);
   };
 
+  // Function to render pages based on state
+  const renderPage = () => {
+    switch (currentPage) {
+      case "home":
+        return <Home />;
+      case "experience":
+        return <Experience />;
+      case "skills":
+        return <Skills />;
+      case "research":
+        return <Research />;
+      default:
+        return <Home />;
+    }
+  };
+
   return (
-    <nav className="navbar">
-      <div className="navbar__brand">
-        <Link to="/" className="navbar__logo">
-          Henry Tran
-        </Link>
+    <div>
+      <nav className="navbar">
+        <div className="navbar__brand">
+          <span onClick={() => setCurrentPage("home")} className="navbar__logo">
+            Henry Tran
+          </span>
+        </div>
+        <ul className={isMobile ? "navbar__links mobile" : "navbar__links"}>
+          <li>
+            <span onClick={() => setCurrentPage("experience")} className="navbar__link">
+              Experience
+            </span>
+          </li>
+          <li>
+            <span onClick={() => setCurrentPage("skills")} className="navbar__link">
+              Skills
+            </span>
+          </li>
+          <li>
+            <span onClick={() => setCurrentPage("research")} className="navbar__link">
+              Research
+            </span>
+          </li>
+        </ul>
+        <div className="navbar__hamburger" onClick={toggleMobileMenu}>
+          <div className="navbar__line"></div>
+          <div className="navbar__line"></div>
+          <div className="navbar__line"></div>
+        </div>
+      </nav>
+
+      {/* Render the page based on the currentPage state */}
+      <div className="content">
+        {renderPage()}
       </div>
-      <ul className={isMobile ? "navbar__links mobile" : "navbar__links"}>
-        <li>
-          <Link to="/experience" className="navbar__link">
-            Experience
-          </Link>
-        </li>
-        <li>
-          <Link to="/skills" className="navbar__link">
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="/research" className="navbar__link">
-            Research
-          </Link>
-        </li>
-      </ul>
-      <div className="navbar__hamburger" onClick={toggleMobileMenu}>
-        <div className="navbar__line"></div>
-        <div className="navbar__line"></div>
-        <div className="navbar__line"></div>
-      </div>
-    </nav>
+    </div>
   );
 };
 
