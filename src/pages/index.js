@@ -13,18 +13,6 @@ import OtherResearch from "../components/research/research";
 import Footer from "../components/footer/footer";
 import Scroll from "../components/scroll";
 import Navbar from "../components/navbar"; 
-import ReactDOM from 'react-dom/client';  // For React 18
-import { BrowserRouter } from 'react-router-dom';  // Import BrowserRouter
-import App from "../components/app";  // Import your main app component
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// Render the app wrapped in BrowserRouter to enable routing
-root.render(
-  <BrowserRouter basename="/henry-tran">  {/* Set the basename for GitHub Pages */}
-    <App />
-  </BrowserRouter>
-);
 
 const IndexPage = () => (
   <>
