@@ -46,9 +46,9 @@ const Navbar = () => {
         </div>
         <ul className={isMobile ? "navbar__links mobile" : "navbar__links"}>
           <li>
-            <span onClick={() => setCurrentPage("experience")} className="navbar__link">
-              Experience
-            </span>
+            <a href="#experience" className="navbar__link">  {/* Pointing to the experience section */}
+                Experience
+            </a>
           </li>
           <li>
             <span onClick={() => setCurrentPage("research")} className="navbar__link">

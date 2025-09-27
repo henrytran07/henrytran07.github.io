@@ -23,7 +23,7 @@ const experienceData = [
 ];
 
 const Experience = () => (
-  <section className="section experience">
+  <section id="experience" className="section experience"> 
     <div className="section__title">Experience</div>
     <div className="section__content">
       <div className="jobs">
