@@ -17,7 +17,7 @@ const CV = () => {
     return (
         <>
         <Navbar />
-        <div className="CV-page">
+        <div className="cv-page">
             <h1>Henry Tran</h1>
             <p></p>
         </div>

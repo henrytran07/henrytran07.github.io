@@ -1,0 +1,22 @@
+
+/* In your SCSS file (e.g., globals.scss, or a dedicated CV-page.scss) */
+.cv-page {
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background-color: #171c28; /* Dark background for night mode */
+  color: white; /* Light text for visibility in night mode */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack the content */
+  text-align: center; /* Center the text */
+}
+
+.cv-page h1 {
+  font-size: 3rem; /* Larger title */
+  margin-bottom: 20px;
+}
+
+.cv-page p {
+  font-size: 1.2rem; /* Adjust the font size for the content */
+}
