@@ -48,17 +48,17 @@ const Navbar = () => {
         </div>
         <ul className={isMobile ? "navbar__links mobile" : "navbar__links"}>
           <li>
-            <a href="#experience" className="navbar__link">  {/* Pointing to the experience section */}
+            <a href="/#experience" className="navbar__link">  {/* Pointing to the experience section */}
                 Experience
             </a>
           </li>
           <li>
-            <a href="#research" className="navbar__link">  {/* Pointing to the experience section */}
+            <a href="/#research" className="navbar__link">  {/* Pointing to the experience section */}
                 Research
             </a>
           </li>
           <li>
-            <a href="#projects" className="navbar__link">  {/* Pointing to the experience section */}
+            <a href="/#projects" className="navbar__link">  {/* Pointing to the experience section */}
                 Project
             </a>
           </li>
