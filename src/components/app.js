@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";  // For React Router v6
-import IndexPage from "./pages/index";  // Your main page component
+import IndexPage from "../pages/index";  // Your main page component
 import Cv from "./Cv";  // Your CV page component
-import Navbar from "./components/navbar";  // Your Navbar component
+import Navbar from "../components/navbar";  // Your Navbar component
 
 function App() {
   return (
