@@ -33,12 +33,11 @@
 .navbar__link {
   color: white; /* Link color set to white */
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   transition: color 0.3s;
 
-  position: relative;
-  left: 50%; /* Move the link 50% to the right */
-  transform: translateX(-5000%); /* Move link further to the right */
+  position: absolute;
+  right: 25%; /* Move the link 50% to the right */
 
   &:hover {
     color: #B22222; /* Hover color remains as red */
