@@ -157,6 +157,7 @@
     align-items: center; /* Center the content horizontally */
     max-width: 1440px;
     margin: 0 auto; /* Center the container horizontally */
+    margin-top: 50px; 
     
     /* Remove any breakpoints' padding to reduce space further */
     @include weird-medium {
