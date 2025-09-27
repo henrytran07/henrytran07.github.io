@@ -7,12 +7,7 @@ const Switch = () => {
     document.body.classList.add('night');
   }, []); // This effect runs only once when the component is mounted
 
-  return (
-    <div className="switch-wrapper">
-      <div className="sun"></div>
-      <div className="moon"></div>
-    </div>
-  );
+  return null; // No need to render anything
 };
 
 export default Switch;
