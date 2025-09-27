@@ -4,7 +4,7 @@ import "./research.scss"
 
 const researchData = [
   {
-    "name": "Feedback Distillation: Teaching Lightweight to Mimic Expert Feedback in Reasoning Tasks",
+    "name": "Teaching Lightweight to Mimic Expert Feedback in Reasoning Tasks",
     "url": "https://github.com/henrytran07/ChessGame",
     "description": " <br> <a class='small' href='https://github.com/henrytran07/ChessGame'>",
     "used": [
