@@ -142,3 +142,33 @@
       }
     }
   }
+
+
+.my_intro {
+  font-size: 4.0rem; /* Default font size for large screens */
+
+  /* Adjust font-size for different breakpoints */
+  @include desktop {
+    font-size: 2.25rem;
+  }
+
+  @include tablet {
+    font-size: 2rem;
+  }
+
+  @include phablet {
+    font-size: 1.75rem;
+  }
+
+  @include small-mobile {
+    font-size: 1.5rem;
+  }
+
+  @include tiny-mobile {
+    font-size: 1.4rem;
+  }
+
+  font-weight: 300; /* Optional: Set font weight */
+  max-width: 700px; /* Optional: Limit the width of the tagline */
+  margin-bottom: 20px; /* Optional: Add margin for spacing */
+}
