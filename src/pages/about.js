@@ -13,6 +13,10 @@ const CV = () => {
     return (
         <>
         <Navbar />
+        <div className = "cv-page">
+            <h1>Henry Tran</h1>
+            <p>This page is dedicated by Henry Tran</p>
+        </div>
         <Footer />
         </>
   );
