@@ -48,12 +48,12 @@ const Navbar = () => {
           </li>
           <li>
             <span onClick={() => setCurrentPage("skills")} className="navbar__link">
-              Skills
+              Research
             </span>
           </li>
           <li>
             <span onClick={() => setCurrentPage("research")} className="navbar__link">
-              Research
+              Skills
             </span>
           </li>
         </ul>
