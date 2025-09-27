@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.scss"; // Your styles for the navbar
 
 // Dummy components to represent pages
-const Home = () => <h1>Home Page</h1>;
+const Home = () => <h1></h1>;
 const Experience = () => <h1>Experience Page</h1>;
 const Skills = () => <h1>Skills Page</h1>;
 const Research = () => <h1>Research Page</h1>;
