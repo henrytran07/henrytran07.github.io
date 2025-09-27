@@ -56,8 +56,8 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#skills" className="navbar__link">  {/* Pointing to the experience section */}
-                Skills
+            <a href="#projects" className="navbar__link">  {/* Pointing to the experience section */}
+                Projects
             </a>
           </li>
         </ul>
