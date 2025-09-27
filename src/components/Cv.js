@@ -1,6 +1,6 @@
 // Cv.js
 import React from "react";
-import "./Cv.scss";  // Optional: Styling for the CV page
+import "./Cv.scss";  
 
 const Cv = () => {
   return (
