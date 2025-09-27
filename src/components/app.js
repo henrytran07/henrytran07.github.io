@@ -6,7 +6,7 @@ import Navbar from "./components/navbar";  // Import your Navbar component
 
 function App() {
   return (
-    <Router>
+    <Router basename="/henry-tran"> {/* Set the basename to the sub-directory */}
       <Navbar /> {/* Navbar is now part of the routing structure */}
       <Routes>
         {/* Define routes for different pages */}
