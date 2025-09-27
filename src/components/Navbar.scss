@@ -14,7 +14,7 @@
 .navbar__brand .navbar__logo {
   font-size: 1.8rem;
   text-decoration: none;
-  color: black; /* Set logo color to black */
+  color: white; /* Set logo color to black */
   font-weight: bold;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .navbar__link {
-  color: black; /* Set link color to black */
+  color: white; /* Set link color to black */
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s;
@@ -45,7 +45,7 @@
 .navbar__line {
   width: 30px;
   height: 3px;
-  background-color: black; /* Change line color to black */
+  background-color: white; /* Change line color to black */
 }
 
 /* Mobile Menu (when navbar__hamburger is clicked) */
