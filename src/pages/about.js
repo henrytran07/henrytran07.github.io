@@ -13,7 +13,7 @@ const CV = () => {
         <Navbar />
         <div className = "cv-page">
             <h1>Henry Tran</h1>
-            <p>This page is dedicated by Henry Tran</p>
+            <p>This page is still in progress of building</p>
         </div>
         <Footer />
         </>
