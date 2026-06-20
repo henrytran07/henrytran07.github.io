@@ -141,7 +141,20 @@
 <script>
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.navbar ul li a');
+  const menuBtn = document.querySelector('#menu');
+  const navbar = document.querySelector('.navbar');
 
+  // --- Menu toggle: attached ONCE ---
+  menuBtn.addEventListener('click', () => {
+    navbar.classList.toggle('nav-toggle');
+  });
+
+  // Close the menu after tapping a link
+  document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => navbar.classList.remove('nav-toggle'));
+  });
+
+  // --- Scroll spy: only updates the active link ---
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
@@ -151,7 +164,7 @@
       }
     });
 
-    // if scrolled to the bottom, force the last section active
+    // If scrolled to the bottom, force the last section active
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
       current = sections[sections.length - 1].getAttribute('id');
     }
@@ -161,18 +174,6 @@
       if (link.getAttribute('href') === '#' + current) {
         link.classList.add('active');
       }
-    });
-
-    const menuBtn = document.querySelector('#menu');
-    const navbar = document.querySelector('.navbar');
-
-    menuBtn.addEventListener('click', () => {
-      navbar.classList.toggle('nav-toggle');
-    });
-
-  // close the menu after tapping a link
-    document.querySelectorAll('.navbar a').forEach(link => {
-      link.addEventListener('click', () => navbar.classList.remove('nav-toggle'));
     });
   });
 </script>
