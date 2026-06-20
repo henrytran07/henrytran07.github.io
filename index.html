@@ -89,34 +89,34 @@
 
     <h3 class="exp-group">Education</h3>
     <ul>
-      <li>University of California, Los Angeles (UCLA) | <em>B.S. Electrical Engineering</em> | 2026 – 2028</li>
-      <li>Mt. San Antonio College | <em>Associate of Arts, Mathematics (transfer)</em> | 2022 – 2026</li>
+      <li>University of California, Los Angeles (UCLA) | B.S. Electrical Engineering | 2026 – 2028</li>
+      <li>Mt. San Antonio College | Associate of Arts, Mathematics (transfer) | 2022 – 2026</li>
     </ul>
 
     <h3 class="exp-group">Research</h3>
     <ul>
       <li>
-        Step-Level Feedback Distillation (SLFD) | <em>Machine Learning Researcher</em> | 2025 – Present <a href="https://feedback-distillation.exe.xyz/" target="_blank" aria-label="View VEX competition results"><i class="fas fa-external-link-alt"></i></a>
+        Step-Level Feedback Distillation (SLFD) | Machine Learning Researcher | 2025 – Present <a href="https://feedback-distillation.exe.xyz/" target="_blank" aria-label="View VEX competition results"><i class="fas fa-external-link-alt"></i></a>
       </li>
     </ul>
 
     <h3 class="exp-group">Robotics</h3>
     <ul>
       <li>
-        VEX Robotics Competition | <em>Lead Programmer for Mt.SAC1, Autonomous</em> | 2025 – 2026 <a href="https://events.vex.com/robot-competitions/college-competition/RE-VURC-26-4027.html#results-" target="_blank" aria-label="View VEX competition results"><i class="fas fa-external-link-alt"></i></a>
+        VEX Robotics Competition | Lead Programmer for Mt.SAC1 | 2025 – 2026 <a href="https://events.vex.com/robot-competitions/college-competition/RE-VURC-26-4027.html#results-" target="_blank" aria-label="View VEX competition results"><i class="fas fa-external-link-alt"></i></a>
       </li>
     </ul>
 
     <h3 class="exp-group">Projects</h3>
     <ul>
-      <li>Kalshi EV Scanner | <em>Quantitative Modeling</em> | 2025</li>
-      <li>Neural Network Classifiers | <em>Machine Learning</em> | 2025</li>
+      <li>Kalshi EV Scanner | Quantitative Modeling| 2025</li>
+      <li>Neural Network Classifiers | Machine Learning | 2025</li>
     </ul>
 
     <h3 class="exp-group">Leadership</h3>
     <ul>
-      <li>Alpha Gamma Sigma (AGS) — Mt. SAC Honor Society | <em>Vice President</em> | 2023</li>
-      <li>Math Club | <em>Secretary | 2024</em></li>
+      <li>Alpha Gamma Sigma (AGS) — Mt. SAC Honor Society | Vice President | 2023</li>
+      <li>Math Club | Secretary | 2024 </li>
     </ul>
 
   </div>
@@ -139,16 +139,29 @@
 </footer>
 <!-- footer section ends -->
 <script>
-  const menuBtn = document.querySelector('#menu');
-  const navbar = document.querySelector('.navbar');
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.navbar ul li a');
 
-  menuBtn.addEventListener('click', () => {
-    navbar.classList.toggle('nav-toggle');
-  });
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const top = section.offsetTop - 150;
+      if (window.scrollY >= top) {
+        current = section.getAttribute('id');
+      }
+    });
 
-  // close the menu after tapping a link
-  document.querySelectorAll('.navbar a').forEach(link => {
-    link.addEventListener('click', () => navbar.classList.remove('nav-toggle'));
+    // if scrolled to the bottom, force the last section active
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+      current = sections[sections.length - 1].getAttribute('id');
+    }
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
   });
 </script>
 
