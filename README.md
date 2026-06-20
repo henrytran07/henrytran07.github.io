@@ -2,16 +2,8 @@
 
 My personal portfolio website, built and customized with **HTML5, CSS3, and JavaScript**. It showcases my work across electrical engineering, machine learning research, robotics, and quantitative analysis.
 
-<a href="https://henrytran07.github.io/" target="_blank"><strong>🚀 Visit the live site</strong></a>
+<a href="https://henrytran07.github.io/" target="_blank"><strong> Visit the live site</strong></a>
 
-## 🛠️ Run locally
-
-```bash
-git clone https://github.com/henrytran07/henrytran07.github.io.git
-cd henrytran07.github.io
-```
-
-Then open `index.html` in your browser — no build step needed.
 
 ## 📬 Contact
 
