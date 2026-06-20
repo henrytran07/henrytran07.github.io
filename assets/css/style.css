@@ -40,6 +40,11 @@ html::-webkit-scrollbar-thumb {
   background: #420177;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* pre loader start */
 .loader-container {
   position: fixed;
