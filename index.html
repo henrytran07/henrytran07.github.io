@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Henry Tran - UCLA Electrical Engineering student. Robotics, machine learning, and backend developer" />
+    <meta name="description" content="Henry's Portfolio" />
+    <link rel="stylesheet" href="style/index.css">
+    
+    <!--font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- title -->
+    <title>Henry Tran</title>
+  </head>
+  
+  <body>
+    <!--navbar-->
+    <header class="navbar js-nav-bar">
+      <h1>Henry Tran</h1>
+      <nav class="navbar-links" aria-label="Main">
+        <ul>
+          <li><a href="#about" class="nav-link js-nav-link">about</a></li>
+          <li><a href="#experience" class="nav-link js-nav-link">experience</a></li>
+          <li><a href="#projects" class="nav-link js-nav-link">projects</a></li>
+          <li><a href="#contacts" class="nav-link js-nav-link">contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--profile pic-->
+    <div class="profile-pic">
+      <image src="images/HenryTran_homepage.png"></image>
+    </div>
+    <!--intro-->
+    <div class="introduction">
+      <p>Hi! I'm Henry. Welcome to my porfolio</p>
+    </div>
+
+    <div class="container">
+      <!--about me-->
+      <section class="about-me" id="about">
+        <h2>about me</h2>
+        <p>
+          B.S in <span class="text-bold">Electrical Engineering</span> at UCLA
+        </p>
+
+        <!--blobs-->
+        <div class="bubbles">
+          <ul>
+            <li>Electrical Engineering</li>
+            <li>Frontend + Backend Dev</li>
+            <li>ML Research</li>
+          </ul>
+        </div>
+
+        <!--resume btns-->
+        <div class="resume-n-socials-btn">
+          <a href="resume.pdf" download class="resume-btn">
+            <i class="fa-solid fa-download"></i> 
+            resume
+          </a>
+
+          <div class="social-icons">
+            <a href="https://github.com/henrytran07" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/henry-tran-8b6025314/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--work-->
+      <section class="work" id="experience">
+        <h2>experience</h2>
+        <div class="experience">
+          <div class="date">May 2025 - Jul 2026</div>
+          <div class="experience-info">
+            <h3>Algoverse</h3>
+            <h4>Machine Learning Researcher</h4>
+            <p>
+              Co-authored <em>Before You Scale: The Cost of Supervision Mismatch in PRM Distillation</em>,
+              accepted to COLM 2026 ER Workshop.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="date">Aug 2025 - Jun 2026</div>
+          <div class="experience-info">
+            <h3>Mt.SAC VEX-U Robotics Team</h3>
+            <h4>Team Lead Programmer</h4>
+            <p>
+              Developed a vision-based autonomous system using closed-loop control (distance sensor, VEX camera, odometry data) and PID tuning, achieving 13th overall in Skills at the VEX-U World Championship 2026.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--side projects-->
+      <section class="side-projects" id="projects">
+        <h2>side projects</h2>
+
+        <a href="https://github.com/henrytran07/image-classifier" target="_blank" rel="noopener" class="project-link">
+          <div class="project">
+            <img src="images/fashion_mnist.png" alt="Grid of Fashion-MNIST clothing images">
+
+            <div class="project-info">
+              <h3>
+                Fashion-MNIST Clothing Classifier
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </h3>
+              <p>Classified clothing items (T-shirts, trousers, etc.) using a neural network model, which was built from scratch.</p>
+
+              <div class="skill-pills">
+                <ul>
+                  <li>Python</li>
+                  <li>NumPy</li>
+                  <li>Neural Networks</li>
+                  <li>Backpropagation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/henrytran07/HAcK_2026_sigma" target="_blank" rel="noopener" class="project-link">
+          <div class="project">
+            <img src="images/sigma_4_guitar.jpeg" alt="Group Photos">
+            <div class="project-info">
+              <h3>
+                Σ4 guitar
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </h3>
+              <p>Built an 8-octave electronic guitar with a custom circuit, plus a 
+              web app that displays the frequency and note of each play in real time.</p>
+              <div class="skill-pills">
+                <ul>
+                  <li>Python</li>
+                  <li>FastAPI</li>
+                  <li>HTML && CSS</li>
+                  <li>Circuit Python</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/henrytran07/ChessGame" target="_blank" rel="noopener" class="project-link">
+          <div class="project">
+            <img src="images/chess_board_image.png" alt="Chess Game img">
+            <div class="project-info">
+              <h3>
+                Chess Game
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </h3>
+              <p>        
+              Built a fully playable chess game implementing legal moves, 
+              the 50-move rule, in-game warnings for invalid actions, etc.</p>
+              <div class="skill-pills">
+                <ul>
+                  <li>C++</li>
+                  <li>Data Strutures & Algorithm</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <!--publications-->
+      <section class="publications" id="publications">
+        <h2>publications</h2>
+        <a href="files/171_Before_You_Scale_The_Cost_.pdf" 
+          target="_blank" 
+          rel="noopener" 
+          class="publication-link">
+
+          <div class="publication-card">
+
+            <div class="publication-icon">
+              <i class="fa-solid fa-file-lines"></i>
+            </div>
+
+            <div class="publication-info">
+              <h3>
+                Before You Scale: The Cost of Supervision Mismatch in PRM Distillation
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </h3>
+
+              <p class="authors">
+                S. Kapoor, H. Tran, E. L. C. Lip, and C. Le
+              </p>
+
+              <p class="venue">
+                COLM 2026 Workshop on Efficient Reasoning Models · 2026
+              </p>
+
+              <p class="description">
+                Investigated supervision mismatch in process reward model distillation
+                and its impact on scaling reasoning models.
+              </p>
+            </div>
+
+          </div>
+        </a>
+      </section>
+      
+      <!--contacts-->
+      <section class="contact" id="contacts">
+        <h2>contact</h2>
+        <p>Feel free to connect, collaborate, or just say hi!</p>
+
+        <ul> 
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:henrytran07@ucla.edu">
+            henrytran07@ucla.edu
+          </a>
+        </li>
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/henrytran07">
+              https://github.com/henrytran07
+            </a>
+          </li>
+
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/henry-tran-8b6025314/">
+              https://www.linkedin.com/in/henry-tran-8b6025314/
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!--footer-->
+      <footer>
+        <p>&copy 2026 Henry Tran</p>
+      </footer>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
