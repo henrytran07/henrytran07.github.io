@@ -175,15 +175,22 @@ h1, h2, h3, h4 {
   margin: 30px 0 0 0;
   padding: 0;
   list-style: none;
-  font-size: 18px; 
+
 }
 
 .bubbles ul li {
-  border: 3px solid #30363D; 
-  padding: 10px 8px; 
+  border: none; 
+  padding: 15px 10px; 
   border-radius: 99999px;
-  background-color: #161B22;
+  background-color: #14203C;
   color: #e1e1f1; 
+  font-size: 14px; 
+}
+
+.bubbles ul li:hover {
+  background-color: #112d42;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 
 .resume-n-socials-btn {
