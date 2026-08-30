@@ -276,6 +276,7 @@ h1, h2, h3, h4 {
 
 .project:hover {
   background-color: #161B22;
+  border-color: #2774AE;
 }
 
 .project:hover .project-info h3 i {
@@ -289,6 +290,7 @@ h1, h2, h3, h4 {
   padding: 30px;
   gap: 30px;
   border-radius: 12px;
+  border: 1px solid #333;
 }
 
 .project img {
