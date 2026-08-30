@@ -277,10 +277,11 @@ h1, h2, h3, h4 {
 .project:hover {
   background-color: #161B22;
   border-color: #2774AE;
+  transform: translate(3px, -3px);
 }
 
 .project:hover .project-info h3 i {
-  transform: translate(5px, -5px);
+  transform: translate(3px, -3px);
 }
 
 .project {
@@ -317,7 +318,7 @@ h1, h2, h3, h4 {
   font-size: 0.8em;
   margin-left: 8px;
   color: white;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 .project-info p {
