@@ -1,0 +1,236 @@
+:root {
+  --ink: #101418;
+  --ink-soft: #59626f;
+  --accent: #1f6f7a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: #fff;
+  margin: 0;
+  padding: 48px 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.cv-header {
+  max-width: 900px;
+  margin: 100px auto 44px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.cv-header img {
+  width: 168px;
+  height: 168px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cv-header-info h1 {
+  color: var(--ink);
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 6px;
+}
+
+.cv-header-info h2 {
+  color: var(--ink);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cv-header-info h3 {
+  color: var(--ink-soft);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  margin: 2px 0 18px;
+}
+
+.cv-header a {
+  display: block;
+  color: var(--accent);
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.cv-header a:hover {
+  text-decoration: underline;
+}
+
+.cv-header a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.education,
+.interest, 
+.publications, 
+.experience, 
+.courseworks, 
+.skill-list{
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 50px; 
+}
+
+
+.education h2, 
+.interest h2, 
+.publications h2, 
+.experience h2, 
+.courseworks h2, 
+.skill-list h2 {
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 600;
+  border-left: 7px solid var(--accent);
+  padding-left: 10px;
+  margin: 0 0 22px;
+  text-transform: uppercase;
+}
+
+.education-info
+{
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  column-gap: 28px;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+
+.timeline {
+  color: var(--ink);
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.interest a {
+  color: var(--accent); 
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.interest a:hover {
+  text-decoration: underline; 
+}
+.education-info .text-bold {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.gpa, 
+.education-info p {
+  grid-column: 2;
+  margin: 3px 0 0;
+  font-size: 0.9375rem;
+}
+
+.publication-info, 
+.experience-info {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto;
+  column-gap: 28px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.authors, 
+.skills {
+  margin-left: 92px;
+  margin-top: 5px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.authors p, 
+.skills p {
+  margin: 0;
+}
+
+.icon-link a {
+  display: block;
+  align-items: center;
+  gap: 6px;
+
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.icon-link a:hover {
+  text-decoration: underline;
+}
+.text-bold {
+  font-weight: bold;
+}
+
+.skill-split, 
+.coursework-split {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  column-gap: 28px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.my-skill ul, 
+.classes ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 560px) {
+  body {
+    padding: 32px 20px;
+  }
+
+  .cv-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .cv-header img {
+    width: 132px;
+    height: 132px;
+  }
+
+  .cv-header a {
+    margin: 0 auto;
+  }
+
+  .cv-header-info h1 {
+    font-size: 1.75rem;
+  }
+
+  .education-info {
+    grid-template-columns: 52px 1fr;
+    column-gap: 16px;
+  }
+}
