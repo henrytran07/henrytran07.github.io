@@ -1,7 +1,7 @@
 :root {
   --ink: #101418;
   --ink-soft: #59626f;
-  --accent: #1f6f7a;
+  --accent: #303688;
 }
 
 * {
@@ -202,6 +202,15 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+footer {
+  width: 900px;
+  border-top: 1px solid var(--ink-soft);
+  margin: 0 auto;      
+  text-align: center;  
+  font-size: 0.875rem; 
+  color: var(--ink-soft);  
 }
 
 @media (max-width: 560px) {
