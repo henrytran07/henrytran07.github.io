@@ -7,6 +7,8 @@ const experienceSection = document.getElementById("experience");
 const projectSection = document.getElementById("projects");
 const contactSection = document.getElementById("contacts");
 
+const chatbot = document.querySelector('.js-chatbot');
+const closingWindow = document.querySelector('.js-closing-window');
 function clearSelected() {
   links.forEach((link) => {
     link.classList.remove("selected");
@@ -20,7 +22,7 @@ function selectLink(link) {
 }
 
 let isClicked = false;
-// CLICK
+// click
 links.forEach((link) => {
   link.addEventListener("click", () => {
     isClicked = true;
@@ -30,7 +32,7 @@ links.forEach((link) => {
     }, 800);
   });
 });
-// SCROLL
+// scroll
 window.addEventListener("scroll", () => {
 
   navbar.classList.toggle("scrolled", window.scrollY > 50);
@@ -50,3 +52,24 @@ window.addEventListener("scroll", () => {
     clearSelected();
   }
 }, { passive: true });
+
+let isCBOpen = false;
+
+chatbot.addEventListener("click", () => {
+  if (isCBOpen === false) {
+    chatbot.classList.add('open');
+    isCBOpen = true;
+  }
+});
+
+closingWindow.addEventListener("click", (event) => {
+  event.stopPropagation();
+
+  if (isCBOpen === true) {
+    chatbot.classList.remove('open');
+    isCBOpen = false;
+  }
+});
+
+
+
