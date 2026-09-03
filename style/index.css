@@ -326,6 +326,9 @@ h1, h2, h3, h4 {
   justify-content: space-between;
 }
 
+.experience-info p {
+  line-height: 1.5;  
+}
 .project-info h3 {
   margin-top: 0;
   font-size: 1.0rem;
