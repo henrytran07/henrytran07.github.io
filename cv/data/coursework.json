@@ -1,0 +1,7 @@
+[{
+  "name": "Programming & Mathematics", 
+  "courses": ["OOP", "DSA", "Linear Algebra", "Differential Equations"]
+}, {
+  "name": "EE & Physics", 
+  "courses": ["Electrical Circuit Analysis", "Classical Mechanics", "Electricity & Magnetism", "Waves & Quantum Physics"]
+}]

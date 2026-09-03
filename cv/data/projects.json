@@ -1,0 +1,57 @@
+[
+{
+  "year": "2026",
+  "name": "13th overall in Skills at VEX-U World Championship", 
+  "skills": "C++, VEX V5 SDK, Data Structures & Algorithms", 
+  "author": "Gabriel Gardner, Santi Garcia, Diego Valdez, Henry Tran, Alejandro Padilla, Junwei Lin, Ivan Tran, Ethan Lahip, and Mt.SAC Robotics Team", 
+  "link": "https://henrytran07.github.io/mtsac_tutorial/recap.html", 
+  "icon-link": {
+    "icon": "<i class=\"fa-solid fa-globe\"></i>", 
+    "name": "Website"
+  }
+}, 
+{
+  "year": "2026",
+  "name": "UCLA HAcK",
+  "skills": "Python3, HTML, CSS, Javascript, FastAPI, CircuitPython",
+  "author": "Henry Tran, Bertrand Wickam, Bao Nguyen, Dominic Agoncillo",
+  "link": "https://github.com/henrytran07/HAcK_2026_sigma",
+  "icon-link": {
+    "icon": "<i class=\"fa-brands fa-github\"></i>",
+    "name": "Github"
+  }
+},
+{
+  "year": "2026", 
+  "name": "Fashion MNIST Clothing Classifier", 
+  "skills": "Python3, HTML, CSS, Numpy, Neural Networks, Backpropagation, Linear Algebra", 
+  "author": "Henry Tran", 
+  "link": "https://github.com/henrytran07/image-classifier",
+  "icon-link": {
+    "icon": "<i class=\"fa-brands fa-github\"></i>",
+    "name": "Github"
+  }
+}, 
+{
+  "year": "2026", 
+  "name": "Budget Tracker", 
+  "skills": "Python3, HTML, CSS, FastAPI", 
+  "author": "Henry Tran, Sean Stokowski", 
+  "link": "https://github.com/henrytran07/budget.tracker",
+  "icon-link": {
+    "icon": "<i class=\"fa-brands fa-github\"></i>",
+    "name": "Github"
+  }
+}, 
+{
+  "year": "2025", 
+  "name": "Chess Game", 
+  "skills": "C++, Data Structures & Algorithms", 
+  "author": "Henry Tran", 
+  "link": "https://github.com/henrytran07/ChessGame",
+  "icon-link": {
+    "icon": "<i class=\"fa-brands fa-github\"></i>",
+    "name": "Github"
+  }
+}
+]

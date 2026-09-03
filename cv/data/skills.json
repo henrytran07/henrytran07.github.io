@@ -1,0 +1,13 @@
+[{
+  "name": "Data Science", 
+  "skill_name": ["Classification", "K-Means Clustering", "Linear Regression", "Neural Networks", "Large Language Models (LLMs)", "Data Visualization"]
+}, {
+  "name": "Programming", 
+  "skill_name": ["Python", "C++", "Javascript", "HTML", "CSS", "React.js"]
+}, {
+  "name": "Database", 
+  "skill_name": ["SQL"]
+}, {
+  "name": "Languages", 
+  "skill_name": ["English", "Vietnamese"]
+}]

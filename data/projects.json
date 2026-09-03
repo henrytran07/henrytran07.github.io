@@ -1,0 +1,35 @@
+[
+  {
+    "link": "https://github.com/henrytran07/image-classifier", 
+    "image": {
+      "image_link": "images/fashion_mnist.png", 
+      "width": 1600, 
+      "height": 1600
+    },  
+    "name": "Fashion-MNIST Clothing Classifier", 
+    "description": "Classified clothing items (t-shirts, trousers, etc) using a neural network dense model that was built from scratch", 
+    "skills": ["python", "numpy", "neural network", "backpropagation", "linear algebra"]
+  }, 
+  {
+    "link": "https://github.com/henrytran07/HAcK_2026_sigma", 
+    "image": {
+      "image_link": "images/sigma_4_guitar.jpeg", 
+      "width": 2048, 
+      "height": 1536
+    }, 
+    "name": "Σ4 guitar", 
+    "description": "Built an 8 octave electronic guitar with a built-in custom circuit and design the web app that is able to display the frequency and note of each play in real time", 
+    "skills": ["python", "fastapi", "html", "css", "micropython"] 
+  }, 
+  {
+    "link": "https://github.com/henrytran07/ChessGame", 
+    "image": {
+      "image_link": "images/chess_board_image.png", 
+      "width": 1520, 
+      "height": 532
+    }, 
+    "name": "Chess Game",
+    "description": "built a fully playable chess game implementing legal moves, checkmate detection, the 50-move rule, and in-game warnings for invalid actions.",
+    "skills": ["c++", "dsa"]
+  }
+]
