@@ -182,7 +182,7 @@ sendbtn.addEventListener("click", async function () {
   chatlogHTML.scrollTop = chatlogHTML.scrollHeight;
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/chat", {
+    const response = await fetch("https://henrytran07-github-io.vercel.app/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question: message })
