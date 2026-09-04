@@ -60,7 +60,7 @@ def ask(question: Question):
         json={
             "model": MODEL_ID,
             "temperature": 0.2,
-            "max_tokens": 120,
+            "max_tokens": 400,
             "messages": [
                 {"role": "system", "content": SYSTEM},
                 {"role": "user", "content": question.question},
