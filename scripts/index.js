@@ -146,3 +146,58 @@ async function loadProjectInfo() {
 }
 
 loadProjectInfo(); 
+
+const input = document.getElementById('chat-id'); 
+const sendbtn = document.getElementById('send-id'); 
+const inputChat = document.getElementById('input-chat'); 
+const chatlogHTML = document.getElementById('chat-log'); 
+function displaySendButton() {
+  if (input.value != "") {
+    inputChat.classList.add("send"); 
+  } else {
+    inputChat.classList.remove("send"); 
+  }
+}
+
+input.addEventListener("input", displaySendButton);
+
+sendbtn.addEventListener("click", async function () {
+  const message = input.value.trim();
+  if (message === "") {
+    return;
+  }
+
+  input.value = "";
+  inputChat.classList.remove("send");
+
+  const userBubble = document.createElement("p");
+  userBubble.classList.add("message", "user");
+  userBubble.textContent = message;
+  chatlogHTML.appendChild(userBubble);
+
+  const botBubble = document.createElement("p");
+  botBubble.classList.add("message", "bot");
+  botBubble.textContent = "thinking...";
+  chatlogHTML.appendChild(botBubble);
+  chatlogHTML.scrollTop = chatlogHTML.scrollHeight;
+
+  try {
+    const response = await fetch("http://127.0.0.1:8000/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question: message })
+    });
+    if (!response.ok) {
+      botBubble.textContent = "Something went wrong on the server.";
+      console.error("Server error", response.status, await response.text());
+      return;
+    }
+    const data = await response.json();
+    botBubble.textContent = data.reply;
+  } catch (err) {
+    botBubble.textContent = "loc ai is offline right now — email me instead.";
+    console.error("Request failed:", err);
+  } finally {
+    chatlogHTML.scrollTop = chatlogHTML.scrollHeight;
+  }
+});
