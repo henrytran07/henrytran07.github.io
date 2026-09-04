@@ -41,7 +41,14 @@ RULES
 5. Use "I" for yourself and "he" for Henry.
 6. Decline anything off the topic of Henry's background."""
 
+@app.get("/api/health")
+@app.get("/health")
+def health():
+    return {"status": "ok", "model": MODEL_ID}
+
+
 @app.post("/api/chat")
+@app.post("/chat")
 def ask(question: Question):
     key = os.environ.get("GROQ_API_KEY")
     if not key:
