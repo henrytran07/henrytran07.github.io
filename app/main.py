@@ -66,3 +66,20 @@ def health_status():
         "model": MODEL_ID,
         "key_loaded": bool(os.environ.get("GROQ_API_KEY")),
     }
+
+from fastapi.responses import JSONResponse
+
+
+@app.api_route("/{full_path:path}", methods=["GET", "POST"])
+def fallback(request: Request, full_path: str):
+    return JSONResponse(
+        status_code=404,
+        content={
+            "seen_path": request.url.path,
+            "root_path": request.scope.get("root_path"),
+            "method": request.method,
+            "registered": sorted(
+                route.path for route in app.routes if hasattr(route, "path")
+            ),
+        },
+    )
