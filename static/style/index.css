@@ -287,22 +287,76 @@ h1, h2, h3, h4 {
   color: white; 
 }
 
-.project-link {
-  text-decoration: none;
-  color: inherit;
+#project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem; 
 }
 
-.project:hover {
-  background-color: #161B22;
+.project-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
 }
 
 .project {
-  margin: 40px 0 0 0;
   display: flex;
-  align-items: flex-start;
-  padding: 30px;
-  gap: 30px;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  padding: 1rem;
   border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.project-link:hover .project {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.project-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.project-info-header h3,
+.project-info p {
+  margin: 0;
+}
+
+.project-info p {
+  line-height: 1.5;
+}
+
+.skill-pills {
+  margin-top: auto;
+}
+
+.skill-pills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .project img {
@@ -752,6 +806,10 @@ footer p {
     right: 20px;
     bottom: 20px;
     height: min(500px, 70vh);
+  }
+
+  #project-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
