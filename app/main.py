@@ -59,8 +59,13 @@ def get_cv(request: Request):
 
 @app.get("/before-you-scale")
 @app.get("/before-you-scale/")
-def get_cv(request: Request):
+def get_bys(request: Request):
     return render(request, "before-you-scale.html")
+
+@app.get("/misc")
+@app.get("/misc/")
+def get_misc(request: Request):
+    return render(request, "misc.html")
 
 @app.get("/api/health", status_code=status.HTTP_200_OK)
 @app.get("/health", status_code=status.HTTP_200_OK)
