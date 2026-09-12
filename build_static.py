@@ -8,6 +8,7 @@ API_BASE = ""
 PAGES = {
     "home.html": BASE / "index.html",
     "cv.html": BASE / "cv" / "index.html",
+    "before-you-scale.html": BASE / "before-you-scale" / "index.html",
 }
 
 
