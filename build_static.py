@@ -5,10 +5,11 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 BASE = Path(__file__).resolve().parent
 API_BASE = ""
 
+print(BASE)
 PAGES = {
     "home.html": BASE / "index.html",
     "cv.html": BASE / "cv" / "index.html",
-    "before-you-scale.html": BASE / "before-you-scale" / "index.html",
+    "before-you-scale.html": BASE / "templates"/ "before-you-scale",
 }
 
 
