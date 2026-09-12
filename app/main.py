@@ -57,6 +57,10 @@ def get_home(request: Request):
 def get_cv(request: Request):
     return render(request, "cv.html")
 
+@app.get("/before-you-scale")
+@app.get("/before-you-scale/")
+def get_cv(request: Request):
+    return render(request, "before-you-scale.html")
 
 @app.get("/api/health", status_code=status.HTTP_200_OK)
 @app.get("/health", status_code=status.HTTP_200_OK)

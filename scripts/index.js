@@ -120,7 +120,6 @@ async function loadProjectInfo() {
 
   jsonFile.forEach((project) => {
     projectHTML.innerHTML += `
-      <a href= ${project.link} rel="noopener" class="project-link">
         <div class="project">
           <img src="${project.image.image_link}"alt="Terminal rendering of the chess board" width="${project.image.width}" height="${project.image.height}" loading="lazy" decoding="async">
           <div class="project-info">
@@ -128,9 +127,6 @@ async function loadProjectInfo() {
               <h3>
                 ${project.name}
               </h3>
-              <span class="arrow-right">
-                →
-              </span>
             </div>
             <p>  
               ${project.description}      
@@ -142,9 +138,13 @@ async function loadProjectInfo() {
                 }).join("")}
               </ul>
             </div>
+            <span class="source-link">
+                <a href= ${project.link} target="_blank" class="project-link">
+                  <i class="fa-brands fa-github"></i> source
+                </a>
+            </span>
           </div>
         </div>
-      </a>
     `; 
   }); 
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Before You Scale: The Cost of Supervision Mismatch in PRM Distillation. Accepted to the COLM 2026 ER Workshop." />
+    <meta name="api-base" content="" />
+    <link rel="stylesheet" href="/static/style/bys.css">
+
+    <!--font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- title -->
+    <title>Before You Scale</title>
+  </head>
+
+  <body>
+    <div class="introduction">
+      <div class="title">
+        <h1>Before You Scale</h1>
+        <p class="subtitle">The Cost of Supervision Mismatch in PRM Distillation</p>
+        <span class="venue">COLM 2026 ER Workshop</span>
+          <ul class="authors">
+            <li class="first-author">Saksham Kapoor</li>
+            <li>Henry Tran</li>
+            <li>Edward Lue Chee Lip</li>
+            <li>Charlotte Le</li>
+          </ul>
+      </div>
+
+      <div class="role">
+        <p>
+          I started this project in the summer of 2025, exploring whether a smaller model could be
+          taught by a larger one to give feedback as effectively as a pair of larger models. The work
+          paused for a stretch and picked back up in June 2026, and the resulting paper was accepted
+          to the COLM 2026 ER Workshop in San Francisco. What drew me in was a finding in the prior
+          work we built on: feedback from two models tailors the response better for the student
+          model. What we found was the opposite of what we expected. The teacher did benefit from the
+          extra information, but the student never inherited that richness in our setup.
+        </p>
+
+        <ul>
+          <li>
+            <a href="https://github.com/edward-lcl/feedback-distillation/blob/b80a1d0df7235c72a68c031f6985d747d56f3bca/paper/slfd_colm_er_final.pdf" target="_blank">
+              <i class="fa-regular fa-file-lines"></i> Paper
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/edward-lcl/feedback-distillation" target="_blank">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
