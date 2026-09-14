@@ -406,34 +406,35 @@ h1, h2, h3, h4 {
 }
 
 .skill-pills ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
   list-style: none;
-  flex-wrap: wrap;
-  gap: 10px;
   padding: 0;
+  column-gap: 5px;
+  justify-items: start;
 }
 
 .skill-pills ul li {
   background-color: #27272a;
   color: var(--text-primary);
+
   padding: 7px 15px;
   font-size: 0.75rem;
   border-radius: 99999px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: fit-content;
   white-space: nowrap;
 }
 
 .source-link {
+  display: inline-block;
   margin-top: 5px; 
   background-color: #27272a;
-  padding: 5px 5px; 
+  padding: 10px 10px; 
   border-radius: 99999px;
   font-size: 0.75rem; 
   cursor: pointer;
-  width: 20%; 
+  width: fit-content; 
   text-align: center;
 }
 .contact p {
@@ -801,7 +802,15 @@ footer p {
     padding: 20px;
   }
 
-
+  .skill-pills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
   .chatbot-window {
     width: 70%;
     right: 20px;
@@ -814,15 +823,6 @@ footer p {
   }
 }
 
-@media (max-width: 480px) {
-  .publication-card {
-    flex-direction: column;
-  }
-
-  .resume-n-socials-btn {
-    flex-wrap: wrap;
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
   html {

@@ -205,7 +205,7 @@ img {
 }
 
 footer {
-  width: 900px;
+  max-width: 900px;
   border-top: 1px solid var(--ink-soft);
   margin: 0 auto;      
   text-align: center;  
