@@ -62,6 +62,11 @@ def get_cv(request: Request):
 def get_bys(request: Request):
     return render(request, "before-you-scale.html")
 
+@app.get("/mtsac-robotics")
+@app.get("/mtsac-robotics/")
+def get_bys(request: Request):
+    return render(request, "mtsac-robotics.html")
+
 @app.get("/misc")
 @app.get("/misc/")
 def get_misc(request: Request):
