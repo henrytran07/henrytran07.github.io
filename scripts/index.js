@@ -112,44 +112,106 @@ async function loadExperienceInfo() {
 
 loadExperienceInfo(); 
 
-let projectHTML = document.getElementById('project-container'); 
+const projectHTML = document.getElementById("project-container");
+const projectDialog = document.getElementById("project-dialog");
+const projectDialogInner = projectDialog.querySelector(".project-dialog-inner");
+const projectDialogImage = document.getElementById("project-dialog-image");
+const projectDialogTitle = document.getElementById("project-dialog-title");
+const projectDialogDescription = document.getElementById("project-dialog-description");
+const projectDialogSkills = document.getElementById("project-dialog-skills");
+const projectDialogLink = document.getElementById("project-dialog-link");
+
+let projectData = [];
+
+const escapeHTML = (value) =>
+  String(value ?? "").replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
 
 async function loadProjectInfo() {
-  let response = await fetch("/data/projects.json"); 
-  let jsonFile = await response.json(); 
+  const response = await fetch("/data/projects.json");
 
-  jsonFile.forEach((project) => {
-    projectHTML.innerHTML += `
-        <div class="project">
-          <img src="${project.image.image_link}"alt="Terminal rendering of the chess board" width="${project.image.width}" height="${project.image.height}" loading="lazy" decoding="async">
+  if (!response.ok) {
+    throw new Error(`Could not load projects: ${response.status}`);
+  }
+
+  projectData = await response.json();
+
+  projectHTML.innerHTML = projectData
+    .map(
+      (project, index) => `
+        <div class="project js-project" role="button" tabindex="0" aria-haspopup="dialog" data-index="${index}">
+          <img src="${escapeHTML(project.image.image_link)}" alt="${escapeHTML(project.image.alt ?? project.name)}" width="${escapeHTML(project.image.width)}" height="${escapeHTML(project.image.height)}" loading="lazy" decoding="async">
           <div class="project-info">
             <div class="project-info-header">
-              <h3>
-                ${project.name}
-              </h3>
+              <h3>${escapeHTML(project.name)}</h3>
             </div>
-            <p>  
-              ${project.description}      
-            </p>
-            <div class="skill-pills">
-              <ul>
-                ${project.skills.map(skill => {
-                  return `<li>${skill}</li>`;
-                }).join("")}
-              </ul>
-            </div>
-            <span class="source-link">
-                <a href= ${project.link} target="_blank" class="project-link">
-                  <i class="fa-brands fa-github"></i> source
-                </a>
-            </span>
           </div>
         </div>
-    `; 
-  }); 
+      `
+    )
+    .join("");
 }
 
-loadProjectInfo(); 
+function openProject(index) {
+  const project = projectData[index];
+  if (!project) return;
+
+  projectDialogImage.src = project.image.image_link;
+  projectDialogImage.alt = project.image.alt ?? project.name;
+  projectDialogTitle.textContent = project.name;
+  projectDialogDescription.textContent = project.description;
+
+  projectDialogSkills.replaceChildren();
+  (project.skills ?? []).forEach((skill) => {
+    const item = document.createElement("li");
+    item.textContent = skill;
+    projectDialogSkills.appendChild(item);
+  });
+
+  if (project.link) {
+    projectDialogLink.href = project.link;
+    projectDialogLink.hidden = false;
+  } else {
+    projectDialogLink.hidden = true;
+  }
+
+  document.documentElement.style.overflow = "hidden";
+  projectDialog.showModal();
+}
+
+projectHTML.addEventListener("click", (event) => {
+  const card = event.target.closest(".js-project");
+  if (!card) return;
+  openProject(Number(card.dataset.index));
+});
+
+projectHTML.addEventListener("keydown", (event) => {
+  if (event.key !== "Enter" && event.key !== " ") return;
+  const card = event.target.closest(".js-project");
+  if (!card) return;
+  event.preventDefault();
+  openProject(Number(card.dataset.index));
+});
+
+projectDialog.addEventListener("click", (event) => {
+  if (!event.target.closest(".project-dialog-inner") || event.target.closest("[data-close]")) {
+    projectDialog.close();
+  }
+});
+
+projectDialog.addEventListener("close", () => {
+  document.documentElement.style.overflow = "";
+});
+
+loadProjectInfo().catch((error) => {
+  console.error(error);
+  projectHTML.innerHTML = "<p>Projects could not be loaded right now.</p>";
+});
 
 const input = document.getElementById('chat-id'); 
 const sendbtn = document.getElementById('send-id'); 
