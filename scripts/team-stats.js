@@ -1,5 +1,5 @@
 const OUR_TEAM = "MTSAC1";
-const TOP_COUNT = 20;
+const TOP_COUNT =  15;
 
 async function loadRanking() {
   const list = document.getElementById("team-list");
