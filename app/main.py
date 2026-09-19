@@ -67,6 +67,11 @@ def get_bys(request: Request):
 def get_bys(request: Request):
     return render(request, "mtsac-robotics.html")
 
+@app.get("/mtsac-robotics/team-stats")
+@app.get("/mtsac-robotics/team-stats/")
+def get_bys(request: Request):
+    return render(request, "team-stats.html")
+
 @app.get("/misc")
 @app.get("/misc/")
 def get_misc(request: Request):

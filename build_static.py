@@ -10,7 +10,8 @@ PAGES = {
     "cv.html": BASE / "cv" / "index.html",
     "before-you-scale.html": BASE / "before-you-scale"/ "index.html",
     "misc.html": BASE/ "misc" / "index.html",
-    "mtsac-robotics.html": BASE/ "mtsac-robotics" / "index.html"
+    "mtsac-robotics.html": BASE/ "mtsac-robotics" / "index.html", 
+    "team-stats.html": BASE / "mtsac-robotics" / "team-stats" / "index.html"
 }
 
 

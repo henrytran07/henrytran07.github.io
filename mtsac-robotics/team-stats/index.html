@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mt.SAC Robotics, VEX, skills scores" />
+    <meta name="description" content="Skills score distribution across the field | Mt.SAC Robotics" />
+    <meta name="api-base" content="" />
+    <title>Team Stats | Mt.SAC Robotics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/style/team-stats.css">
+  </head>
+
+  <body>
+    <main class="chart">
+      <div class="chart-header">
+        <p class="eyebrow">Field Snapshot</p>
+        <span class="team-count">84 teams</span>
+      </div>
+      <h1>Skill Score Insight</h1>
+
+      <div class="skill-summary">
+        <div class="span-score">
+          <p class="stat-label">Median</p>
+          <p class="stat-value">92</p>
+        </div>
+        <div class="span-score">
+          <p class="stat-label">Top 25%</p>
+          <p class="stat-value">128+</p>
+        </div>
+        <div class="span-score">
+          <p class="stat-label">Top 10%</p>
+          <p class="stat-value">188+</p>
+        </div>
+        <div class="span-score leader">
+          <p class="stat-label">Leader</p>
+          <p class="stat-value">268</p>
+        </div>
+      </div>
+
+      <div class="labels">
+        <div class="color">
+          <span class="observed-team"></span>
+          <p>observed team</p>
+        </div>
+        <div class="color">
+          <span class="normal-reference"></span>
+          <p>normal reference</p>
+        </div>
+      </div>
+
+      <img src="/static/images/distribution_graph.png" alt="Distribution graph of team skills scores">
+
+      <div class="graph-explanation">
+        <p>
+          <span class="bold">strong right skew</span>
+          mean 103 &middot; sd 57.1
+        </p>
+      </div>
+    </main>
+
+    <aside class="ranking">
+      <div class="ranking-header">
+        <p class="eyebrow">Leaderboard</p>
+        <span class="team-count" id="ranking-count">84 teams</span>
+      </div>
+
+      <ol class="team-list" id="team-list"></ol>
+    </aside>
+  </body>
+  <script src="/scripts/team-stats.js" defer></script>
+</html>

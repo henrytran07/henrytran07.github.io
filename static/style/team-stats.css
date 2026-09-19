@@ -1,0 +1,269 @@
+:root {
+  --bg: #050505;
+  --bg-secondary: #0b0d10;
+  --card-bg: #111418;
+  --card-hover: #171b21;
+  --header: #080a0d;
+  --primary: #00e5ff;
+  --primary-hover: #67f3ff;
+  --secondary: #2563eb;
+  --success: #22c55e;
+  --warning: #facc15;
+  --danger: #ef4444;
+  --text-primary: #f8fafc;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --border: #27272a;
+  --border-hover: #00e5ff;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --grid-line: rgba(0, 229, 255, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-secondary);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 1.5rem;
+  align-items: start;
+  margin: clamp(2rem, 6vw, 5rem) clamp(1rem, 3vw, 2rem) 2rem;
+}
+
+h1, h2, h3 {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+}
+
+.chart {
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--success);
+}
+
+.team-count {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.chart h1 {
+  font-size: clamp(1.5rem, 3.5vw, 2.75rem);
+}
+
+.skill-summary {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.span-score {
+  background: var(--card-bg);
+  padding: 1rem;
+  transition: background 0.2s ease;
+}
+
+.span-score:hover {
+  background: var(--card-hover);
+}
+
+.stat-label {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--success);
+}
+
+.stat-value {
+  margin-top: 0.5rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.span-score.leader .stat-value {
+  color: var(--primary);
+}
+
+.labels {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+
+.color {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.observed-team {
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  background-color: #00373d;
+  border: 1px solid var(--primary);
+}
+
+.normal-reference {
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  background-color: var(--success);
+}
+
+.chart img {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.graph-explanation {
+  margin-top: 1rem;
+}
+
+.ranking-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.team-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.team:hover {
+  background: var(--card-hover);
+  border-color: var(--border-hover);
+}
+
+.rank {
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  min-width: 1.75rem;
+}
+
+.team-name {
+  flex: 1;
+  color: var(--text-primary);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.score {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.team:first-child .score {
+  color: var(--primary);
+}
+
+.team.highlight {
+  border-color: var(--primary);
+  background: rgba(0, 229, 255, 0.06);
+}
+.team-list:not(.expanded) .team.extra {
+  display: none;
+}
+
+.toggle-teams {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.toggle-teams:hover {
+  background: rgba(0, 229, 255, 0.06);
+  border-color: var(--primary);
+  color: var(--primary-hover);
+}
+
+.toggle-teams:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+@media (max-width: 1000px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
